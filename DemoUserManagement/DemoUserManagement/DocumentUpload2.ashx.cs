@@ -9,6 +9,7 @@ using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.Services.Description;
 using static DemoUserManagement.Utils.ObjectTypes;
+using System.Configuration;
 
 
 namespace DemoUserManagement
@@ -34,7 +35,7 @@ namespace DemoUserManagement
 
                     string fileExtension = Path.GetExtension(fileUpload.FileName);
                     string uniqueFileName = uniqueGuid.ToString() + fileExtension;
-                    string filePath = @"D:\DocumentImages\" + uniqueFileName;
+                    string filePath = ConfigurationManager.AppSettings["documentImages"] + uniqueFileName;
                     fileUpload.SaveAs(filePath);
 
                     int objectId = int.Parse(context.Request["ObjectId"]);
