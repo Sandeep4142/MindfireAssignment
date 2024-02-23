@@ -22,11 +22,8 @@ namespace DemoUserManagement
                 string fileName = context.Request["Name"]; // Retrieve the guid file name
 
                 if (file != null && file.ContentLength > 0)
-                {
-                    
-                    //string uploadFolder = ConfigurationManager.AppSettings["documentImages"]; /
-                    string filePath = @"D:\DocumentImages\" + fileName;
-
+                {                   
+                    string filePath = ConfigurationManager.AppSettings["documentImages"] + fileName;
                     file.SaveAs(filePath);
                     context.Response.Write(fileName);
                 }
