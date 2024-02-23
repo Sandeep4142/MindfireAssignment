@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Web;
+using System.Configuration;
 
 namespace DemoUserManagement
 {
@@ -17,7 +18,7 @@ namespace DemoUserManagement
                 string guidDocumentName = context.Request.QueryString["guidDocumentName"];
 
                 // Get the physical path to the file
-                string filePath = @"D:\DocumentImages\" + guidDocumentName;
+                string filePath = ConfigurationManager.AppSettings["documentImages"] + guidDocumentName;
 
                 // Check if the file exists
                 if (File.Exists(filePath))
