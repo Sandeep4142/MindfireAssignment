@@ -9,12 +9,7 @@
     <title>Login/Signup Page</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .container {
-            max-width: 400px;
-            margin: 100px auto;
-        }
-    </style>
+
 </head>
 <body>
     <div class="container">
