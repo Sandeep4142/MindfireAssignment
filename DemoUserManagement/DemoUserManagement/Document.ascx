@@ -21,24 +21,24 @@
             <Columns>
                 <asp:TemplateField HeaderText="DocumentId" SortExpression="DocumentId">
                     <ItemTemplate>
-                        <asp:Label ID="Label0" runat="server" Text='<%# Bind("DocumentId") %>'></asp:Label>
+                        <asp:Label ID="documentId" runat="server" Text='<%# Bind("DocumentId") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
 
                 <asp:TemplateField HeaderText="DocumentType" SortExpression="DocumentType">
                     <ItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# GetDocumentTypeName((int)Eval("DocumentType")) %>'></asp:Label>
+                        <asp:Label ID="documentType" runat="server" Text='<%# GetDocumentTypeName((int)Eval("DocumentType")) %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
 
                 <asp:TemplateField HeaderText="DocumentName" SortExpression="DocumentName">
                     <ItemTemplate>
-                        <asp:HyperLink ID="DocumentLink" Target="_blank" runat="server" Text='<%# Eval("DocumentName") %>' NavigateUrl='<%# $"~/DocumentHandler.ashx?guidDocumentName={Eval("GuidDocumentName")}" %>'></asp:HyperLink>
+                        <asp:HyperLink ID="documentLink" Target="_blank" runat="server" Text='<%# Eval("DocumentName") %>' NavigateUrl='<%# $"~/DocumentHandler.ashx?guidDocumentName={Eval("GuidDocumentName")}" %>'></asp:HyperLink>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="TimeStamp" SortExpression="TimeStamp">
                     <ItemTemplate>
-                        <asp:Label ID="Label3" runat="server" Text='<%# Bind("TimeStamp") %>'></asp:Label>
+                        <asp:Label ID="timeStamp" runat="server" Text='<%# Bind("TimeStamp") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
