@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <h1>Hello World</h1>
+    @{
+        string[] fruits = { "Mango", "Grapes", "Banana", "Orange" };
+        foreach (string fruit in fruits)
+        {
+            <h3>@fruit</h3>
+        }
+        int age = 19;
+        if (age >= 18)
+        {
+            <h3 class="bg-info">You are @age and adult </h3>
+        }
+        else
+        {
+            <h3>You are @age and minor </h3>
+        }
+    }
+
+</main>
