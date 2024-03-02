@@ -18,7 +18,7 @@ namespace DemoUserManagement.BussinessLogicLayer
 {
     public static class UserDetailsServiceMVC
     {
-        //for UserDetails1
+        //for UserDetails2
         public static void SaveAllDetails(AllDetailsModel userData)
         {
             UserDetailsModel userDetails = userData.user;
@@ -27,7 +27,7 @@ namespace DemoUserManagement.BussinessLogicLayer
             UserDetailsDA.SaveUserDetails(userDetails);
         }
 
-        //for UserDetails2
+        //for UserDetails1
         public static string SaveAllDetails2(UserDetailsModel user, HttpPostedFileBase profilePic, HttpPostedFileBase aadharCard)
         {
             if (profilePic != null && profilePic.ContentLength > 0)
@@ -76,7 +76,6 @@ namespace DemoUserManagement.BussinessLogicLayer
                 GuidDocumentName = GetGuidFileName(file),
                 TimeStamp = DateTime.Now,
             };
-
             DocumentDA.SaveDocuments(newDocument);
         }
 
@@ -86,7 +85,6 @@ namespace DemoUserManagement.BussinessLogicLayer
             if (File.Exists(filePath))
             {
                 string contentType = MimeMapping.GetMimeMapping(fileName);
-
                 HttpContext.Current.Response.ContentType = contentType;
                 HttpContext.Current.Response.AddHeader("Content-Disposition", "inline; filename=" + fileName);
                 HttpContext.Current.Response.TransmitFile(filePath);
@@ -105,22 +103,18 @@ namespace DemoUserManagement.BussinessLogicLayer
             sortExp = sortExp != null ? sortExp : "UserId";
             sortDirection = sortDirection != null ? sortDirection : "ASC";
             currentPage = currentPage !=0 ? currentPage : 1;
-
             string storedSortExpression = HttpContext.Current.Session["SortExpression"] as string;
             string storedSortDirection = HttpContext.Current.Session["SortDirection"] as string;
-
             bool isNewSortExp = !string.IsNullOrEmpty(sortExp) && sortExp != storedSortExpression;
-
+            
             if (isNewSortExp)
             {
                 sortDirection = (storedSortDirection == "ASC") ? "DSC" : "ASC";
                 HttpContext.Current.Session["SortDirection"] = sortDirection;
             }
-
+            
             HttpContext.Current.Session["SortExpression"] = sortExp;
-
             sortExp = isNewSortExp ? sortExp : storedSortExpression;
-
             var users = UserDetailsDA.Allusers(sortExp, sortDirection, (currentPage - 1) * pageSize, pageSize);
             return users;
         }
