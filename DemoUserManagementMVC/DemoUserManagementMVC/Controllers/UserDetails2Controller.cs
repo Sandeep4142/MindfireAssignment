@@ -15,7 +15,6 @@ namespace DemoUserManagementMVC.Controllers
         // GET: UserDetails2
 
         [CustomAuthentication]
-
         public ActionResult Index()
         {
             return View();
