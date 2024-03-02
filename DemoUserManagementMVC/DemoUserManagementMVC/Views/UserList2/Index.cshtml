@@ -1,0 +1,84 @@
+﻿@model List<DemoUserManagement.Model.UserDetailsModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>User Details 2</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered" id="userListTable2">
+        <thead>
+            <tr>
+                <th>Edit</th>
+                <th>
+                    @Html.ActionLink("User Id", "Index", new { sortExp = "UserId" })
+                </th>
+                <th>
+                    @Html.ActionLink("First Name", "Index", new { sortExp = "FirstName" })
+                </th>
+                <th>
+                    @Html.ActionLink("Last Name", "Index", new { sortExp = "LastName" })
+                </th>
+                <th>
+                    @Html.ActionLink("Father's Name", "Index", new { sortExp = "FathersName" })
+                </th>
+                <th>
+                    @Html.ActionLink("Mother's Name", "Index", new { sortExp = "MothersName" })
+                </th>
+                <th>
+                    @Html.ActionLink("Date Of Birth", "Index", new { sortExp = "DateOfBirth" })
+                </th>
+                <th>
+                    @Html.ActionLink("Primary PhoneNo.", "Index", new { sortExp = "PrimaryPhoneNo" })
+                </th>
+                <th>
+                    @Html.ActionLink("Primary EmailId", "Index", new { sortExp = "PrimaryEmailId" })
+                </th>
+                <th>Profile Pic</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink("Edit", "Index", "UserDetails", new { id = user.UserId }, null)
+                    </td>
+                    <td>@user.UserId</td>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.FathersName</td>
+                    <td>@user.MothersName</td>
+                    <td>@user.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                    <td>@user.PrimaryPhoneNo</td>
+                    <td>@user.PrimaryEmailId</td>
+                    <td>
+                        @{
+                            if (!string.IsNullOrEmpty(user.GuidProfilePhoto))
+                            {
+                                <a href="@Url.Action("DownloadFile", "UserList", new { fileName = user.GuidProfilePhoto })" target="_blank">@user.ProfilePhoto</a>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-center">
+    <nav>
+        <ul class="pagination">
+            @{
+                for (int i = 1, j = 1; i <= ViewBag.TotalUser; i += ViewBag.PageSize, j++)
+                {
+                    <li class="page-item">
+                        @Html.ActionLink(j.ToString(), "Index", "UserList2", new { page = j }, new { @class = "page-link" })
+                    </li>
+                }
+            }
+
+        </ul>
+    </nav>
+</div>

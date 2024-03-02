@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoUserManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DemoUserManagementEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="DemoUserManagementModel.Address" />
+    <EntitySet Name="Countries" EntityType="DemoUserManagementModel.Country" />
+    <EntitySet Name="Documents" EntityType="DemoUserManagementModel.Document" />
+    <EntitySet Name="EducationDetails" EntityType="DemoUserManagementModel.EducationDetail" />
+    <EntitySet Name="Notes" EntityType="DemoUserManagementModel.Note" />
+    <EntitySet Name="Roles" EntityType="DemoUserManagementModel.Role" />
+    <EntitySet Name="States" EntityType="DemoUserManagementModel.State" />
+    <EntitySet Name="UserDetails" EntityType="DemoUserManagementModel.UserDetail" />
+    <EntitySet Name="UserRoles" EntityType="DemoUserManagementModel.UserRole" />
+    <AssociationSet Name="FK__Address__UserID__4316F928" Association="DemoUserManagementModel.FK__Address__UserID__4316F928">
+      <End Role="UserDetail" EntitySet="UserDetails" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_addressState" Association="DemoUserManagementModel.FK_addressState">
+      <End Role="State" EntitySet="States" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CountryId" Association="DemoUserManagementModel.FK_CountryId">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_State_Country" Association="DemoUserManagementModel.FK_State_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="State" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserId" Association="DemoUserManagementModel.FK_UserId">
+      <End Role="UserDetail" EntitySet="UserDetails" />
+      <End Role="EducationDetail" EntitySet="EducationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ObjectID" Association="DemoUserManagementModel.FK_ObjectID">
+      <End Role="UserDetail" EntitySet="UserDetails" />
+      <End Role="Note" EntitySet="Notes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserRole__RoleId__18EBB532" Association="DemoUserManagementModel.FK__UserRole__RoleId__18EBB532">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserRole__UserId__19DFD96B" Association="DemoUserManagementModel.FK__UserRole__UserId__19DFD96B">
+      <End Role="UserDetail" EntitySet="UserDetails" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Locality" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="StateId" Type="Int32" Nullable="false" />
+    <Property Name="Pincode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="AddressType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserDetail" Relationship="DemoUserManagementModel.FK__Address__UserID__4316F928" FromRole="Address" ToRole="UserDetail" />
+    <NavigationProperty Name="State" Relationship="DemoUserManagementModel.FK_addressState" FromRole="Address" ToRole="State" />
+    <NavigationProperty Name="Country" Relationship="DemoUserManagementModel.FK_CountryId" FromRole="Address" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="CountryName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Addresses" Relationship="DemoUserManagementModel.FK_CountryId" FromRole="Country" ToRole="Address" />
+    <NavigationProperty Name="States" Relationship="DemoUserManagementModel.FK_State_Country" FromRole="Country" ToRole="State" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="DocumentId" />
+    </Key>
+    <Property Name="DocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectType" Type="Int32" Nullable="false" />
+    <Property Name="ObjectId" Type="Int32" Nullable="false" />
+    <Property Name="DocumentType" Type="Int32" Nullable="false" />
+    <Property Name="DocumentName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GuidDocumentName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="EducationDetail">
+    <Key>
+      <PropertyRef Name="EducationId" />
+    </Key>
+    <Property Name="EducationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Institution" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="University" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Marks" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="EducationType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserDetail" Relationship="DemoUserManagementModel.FK_UserId" FromRole="EducationDetail" ToRole="UserDetail" />
+  </EntityType>
+  <EntityType Name="Note">
+    <Key>
+      <PropertyRef Name="NoteID" />
+    </Key>
+    <Property Name="NoteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ObjectID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectType" Type="Int32" Nullable="false" />
+    <Property Name="NoteText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="UserDetail" Relationship="DemoUserManagementModel.FK_ObjectID" FromRole="Note" ToRole="UserDetail" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+    <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="UserRoles" Relationship="DemoUserManagementModel.FK__UserRole__RoleId__18EBB532" FromRole="Role" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="StateId" />
+    </Key>
+    <Property Name="StateId" Type="Int32" Nullable="false" />
+    <Property Name="StateName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Addresses" Relationship="DemoUserManagementModel.FK_addressState" FromRole="State" ToRole="Address" />
+    <NavigationProperty Name="Country" Relationship="DemoUserManagementModel.FK_State_Country" FromRole="State" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FathersName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MothersName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="AadhaarNo" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="AadhaarFile" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GuidAadhaarFile" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ProfilePhoto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="GuidProfilePhoto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PrimaryPhoneNo" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="AlternatePhoneNo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PrimaryEmailId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AlternateEmailId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Hobbies" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Addresses" Relationship="DemoUserManagementModel.FK__Address__UserID__4316F928" FromRole="UserDetail" ToRole="Address" />
+    <NavigationProperty Name="EducationDetails" Relationship="DemoUserManagementModel.FK_UserId" FromRole="UserDetail" ToRole="EducationDetail" />
+    <NavigationProperty Name="Notes" Relationship="DemoUserManagementModel.FK_ObjectID" FromRole="UserDetail" ToRole="Note" />
+    <NavigationProperty Name="UserRoles" Relationship="DemoUserManagementModel.FK__UserRole__UserId__19DFD96B" FromRole="UserDetail" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="DemoUserManagementModel.FK__UserRole__RoleId__18EBB532" FromRole="UserRole" ToRole="Role" />
+    <NavigationProperty Name="UserDetail" Relationship="DemoUserManagementModel.FK__UserRole__UserId__19DFD96B" FromRole="UserRole" ToRole="UserDetail" />
+  </EntityType>
+  <Association Name="FK__Address__UserID__4316F928">
+    <End Type="DemoUserManagementModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetail">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_addressState">
+    <End Type="DemoUserManagementModel.State" Role="State" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="StateId" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CountryId">
+    <End Type="DemoUserManagementModel.Country" Role="Country" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_State_Country">
+    <End Type="DemoUserManagementModel.Country" Role="Country" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.State" Role="State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserId">
+    <End Type="DemoUserManagementModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.EducationDetail" Role="EducationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetail">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="EducationDetail">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ObjectID">
+    <End Type="DemoUserManagementModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.Note" Role="Note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetail">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Note">
+        <PropertyRef Name="ObjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserRole__RoleId__18EBB532">
+    <End Type="DemoUserManagementModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.UserRole" Role="UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserRole__UserId__19DFD96B">
+    <End Type="DemoUserManagementModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+    <End Type="DemoUserManagementModel.UserRole" Role="UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetail">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>User Details 3</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered" id="userListTable3">
+        <thead>
+            <tr>
+                <th>Edit</th>
+                <th><a href="#" id="sortUserId" data-sort-exp="UserId">User Id</a></th>
+                <th><a href="#" id="sortFirstName" data-sort-exp="FirstName">First Name</a></th>
+                <th><a href="#" id="sortLastName" data-sort-exp="LastName">Last Name</a></th>
+                <th><a href="#" id="sortFathersName" data-sort-exp="FathersName">Father's Name</a></th>
+                <th><a href="#" id="sortMothersName" data-sort-exp="MothersName">Mother's Name</a></th>
+                <th><a href="#" id="sortDateOfBirth" data-sort-exp="DateOfBirth">Date Of Birth</a></th>
+                <th><a href="#" id="sortPrimaryPhoneNo" data-sort-exp="PrimaryPhoneNo">Primary PhoneNo.</a></th>
+                <th><a href="#" id="sortPrimaryEmailId" data-sort-exp="PrimaryEmailId">Primary EmailId</a></th>
+            </tr>
+        </thead>
+        <tbody id="userListBody">
+            <!-- Data will be dynamically populated here -->
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-center">
+    <nav>
+        <ul class="pagination">
+            <!-- Pagination links will be dynamically generated here -->
+        </ul>
+    </nav>
+</div>
+
+<script src="~/Scripts/UserList3.js"></script>
+
+

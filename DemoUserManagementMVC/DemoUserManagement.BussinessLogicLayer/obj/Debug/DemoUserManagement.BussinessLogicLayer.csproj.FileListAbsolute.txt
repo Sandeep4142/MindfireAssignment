@@ -1,0 +1,235 @@
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+C:\Users\sandeeph\source\repos\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (3)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (4)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (5)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (7)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (8)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (9)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (10)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (11)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (12)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (13)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\New folder (14)\DemoUserManagement\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.DataAccessLayer.dll.config
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Model.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\EntityFramework.xml
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
