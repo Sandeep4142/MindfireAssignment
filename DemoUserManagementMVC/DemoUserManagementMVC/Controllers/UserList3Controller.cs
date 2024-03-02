@@ -12,6 +12,7 @@ namespace DemoUserManagementMVC.Controllers
     {
         // GET: UserList3
 
+        [CustomAuthentication]
         public ActionResult Index()
         {
             return View();
@@ -21,13 +22,8 @@ namespace DemoUserManagementMVC.Controllers
         {
             int currentPageIndex = page ?? 1;
             int pageSize = 5;
-
             string sortExpression = sortExp ?? "UserId";
             string sortDirection = sortDir ?? "ASC";
-
-            ViewBag.PageSize = pageSize;
-            ViewBag.SortExpression = sortExpression;
-            ViewBag.SortDirection = sortDirection;
 
             var users = UserDetailsService.Allusers(sortExpression, sortDirection, (currentPageIndex - 1) * pageSize, pageSize);
             int totalUser = UserDetailsService.Lenusers();
@@ -37,24 +33,13 @@ namespace DemoUserManagementMVC.Controllers
                 { "PageSize", pageSize },
                 { "TotalUser", totalUser }
              };
-
             return Json(response, JsonRequestBehavior.AllowGet);
         }
 
         [HandleError]
-        public ActionResult DownloadFile(string fileName)
+        public void DownloadFile(string fileName)
         {
-            //throw new Exception();
-            string filePath = ConfigurationManager.AppSettings["documents"] + fileName;
-            if (System.IO.File.Exists(filePath))
-            {
-                string contentType = MimeMapping.GetMimeMapping(fileName);
-                return File(filePath, contentType);
-            }
-            else
-            {
-                return HttpNotFound();
-            }
+            UserDetailsServiceMVC.DownloadFile(fileName);
         }
     }
 }

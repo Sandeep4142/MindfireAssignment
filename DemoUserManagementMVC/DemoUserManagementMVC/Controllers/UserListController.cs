@@ -22,19 +22,9 @@ namespace DemoUserManagementMVC.Controllers
         }
 
         [HandleError]
-        public ActionResult DownloadFile(string fileName)
+        public void DownloadFile(string fileName)
         {
-            //throw new Exception();
-            string filePath = ConfigurationManager.AppSettings["documents"] + fileName;
-            if (System.IO.File.Exists(filePath))
-            {
-                string contentType = MimeMapping.GetMimeMapping(fileName);
-                return File(filePath, contentType);
-            }
-            else
-            {
-                return HttpNotFound();
-            }
+            UserDetailsServiceMVC.DownloadFile(fileName);
         }
 
     }

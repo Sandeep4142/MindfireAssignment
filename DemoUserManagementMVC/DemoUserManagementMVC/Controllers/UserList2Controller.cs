@@ -17,46 +17,20 @@ namespace DemoUserManagementMVC.Controllers
     {
         // GET: UserList2
         [CustomAuthentication]
-        public ActionResult Index(string sortExp, int? page)
+        public ActionResult Index(string sortExp,string sortDir, int? page)
         {
-
-            int currentPageIndex = page ?? 1;
             int pageSize = 5;
-            ViewBag.PageSize = pageSize;
-
-            string sortExpression = sortExp ?? "UserId";
-            string sortDirection;
-
-            if (sortExp == null)
-            {
-                sortDirection = "ASC";
-            }
-            else
-            {
-                sortDirection = (string)TempData["SortDirection"] == "ASC" ? "DSC" : "ASC";
-            }
-
-            TempData["SortDirection"] = sortDirection;
-
-            var users = UserDetailsService.Allusers(sortExpression, sortDirection, (currentPageIndex - 1) * pageSize, pageSize);
+            int currpage = page??1;
+            var users = UserDetailsServiceMVC.GetUserList(sortExp, sortDir, currpage, pageSize);
             ViewBag.TotalUser = UserDetailsService.Lenusers();
+            ViewBag.PageSize = pageSize;
             return View(users);
         }
 
         [HandleError]
-        public ActionResult DownloadFile(string fileName)
+        public void DownloadFile(string fileName)
         {
-            //throw new Exception();
-            string filePath = ConfigurationManager.AppSettings["documents"] + fileName;
-            if (System.IO.File.Exists(filePath))
-            {
-                string contentType = MimeMapping.GetMimeMapping(fileName);
-                return File(filePath, contentType);
-            }
-            else
-            {
-                return HttpNotFound();
-            }
+             UserDetailsServiceMVC.DownloadFile(fileName);
         }
 
     }

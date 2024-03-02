@@ -36,7 +36,7 @@ namespace DemoUserManagementMVC.Controllers
                     else
                     {
                         int id = ((SessionData)Session["User"]).UserId;
-                        return RedirectToAction("Index", "UserDetails", new { id });
+                        return RedirectToAction("Index", "UserDetails2", new { id });
                     }
                 }
             }
@@ -45,6 +45,7 @@ namespace DemoUserManagementMVC.Controllers
                 return View();
             }
         }
+
         public bool IsValid(string email, string password)
         {
             int userId = UserDetailsService.CheckUser(email, password);

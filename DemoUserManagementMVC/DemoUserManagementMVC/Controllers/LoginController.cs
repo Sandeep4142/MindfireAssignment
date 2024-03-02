@@ -45,6 +45,7 @@ namespace DemoUserManagementMVC.Controllers
                 return View();
             }
         }
+
         public bool IsValid(string email, string password)
         {
             int userId = UserDetailsService.CheckUser(email, password);

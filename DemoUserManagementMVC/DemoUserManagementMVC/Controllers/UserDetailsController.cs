@@ -58,30 +58,11 @@ namespace DemoUserManagementMVC.Controllers
             ViewBag.AddressStateList = new SelectList(stateList, "StateId", "StateName");
         }
 
-        public string SaveUser(UserDetailsModel user, HttpPostedFileBase profilePic, HttpPostedFileBase aadharCard)
+        [HttpPost]
+        public ActionResult SaveUser(UserDetailsModel user, HttpPostedFileBase profilePic, HttpPostedFileBase aadharCard)
         {
-            if (profilePic != null && profilePic.ContentLength > 0)
-            {
-                user.ProfilePhoto = profilePic.FileName;
-                user.GuidProfilePhoto = GetGuidFileName(profilePic);
-            }
-
-            if (aadharCard != null && aadharCard.ContentLength > 0)
-            {
-                user.AadhaarFile = aadharCard.FileName;
-                user.GuidAadhaarFile = GetGuidFileName(aadharCard);
-            }
-            UserDetailsService.SaveUserDetails(user);
-            return "UserSaved";
-        }
-
-        protected string GetGuidFileName(HttpPostedFileBase file)
-        {
-            string fileExtension = Path.GetExtension(file.FileName);
-            string guidFileName = Guid.NewGuid().ToString() + fileExtension;
-            string filePath = ConfigurationManager.AppSettings["documents"] + guidFileName;
-            file.SaveAs(filePath);
-            return guidFileName;
+            UserDetailsServiceMVC.SaveAllDetails2(user, profilePic, aadharCard);
+            return Json(new { success = true });
         }
 
         [HttpPost]
@@ -102,31 +83,14 @@ namespace DemoUserManagementMVC.Controllers
         [HttpPost]
         public ActionResult SaveNote(string objectId, string objectType, string noteText)
         {
-            var newNote = new NotesModel()
-            {
-                ObjectID = int.Parse(objectId),
-                ObjectType = int.Parse(objectType),
-                NoteText = noteText,
-                TimeStamp = DateTime.Now
-            };
-            UserDetailsService.SaveNotes(newNote);
+            UserDetailsServiceMVC.SaveNote(objectId, objectType, noteText); 
             return Json(new { success = true });
         }
 
         [HttpPost]
         public ActionResult SaveDocument(string objectId, string objectType, HttpPostedFileBase file, string fileType)
         {
-            var newDocument = new DocumentModel()
-            {
-                ObjectId = int.Parse(objectId),
-                ObjectType = int.Parse(objectType),
-                DocumentName = file.FileName,
-                DocumentType = int.Parse(fileType),
-                GuidDocumentName = GetGuidFileName(file),
-                TimeStamp = DateTime.Now,
-            };
-
-            UserDetailsService.SaveDocuments(newDocument);
+           UserDetailsServiceMVC.SaveDocument(objectId, objectType, file, fileType);
             return Json(new { success = true });
         }
 

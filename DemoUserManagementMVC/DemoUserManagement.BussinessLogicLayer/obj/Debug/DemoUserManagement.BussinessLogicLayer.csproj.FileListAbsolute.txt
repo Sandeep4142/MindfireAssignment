@@ -233,3 +233,4 @@ D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLa
 D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.csproj.CopyComplete
 D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.dll
 D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\obj\Debug\DemoUserManagement.BussinessLogicLayer.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.BussinessLogicLayer\bin\Debug\DemoUserManagement.BussinessLogicLayer.dll.config

@@ -184,3 +184,4 @@ D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagementMVC\bin\PagedList
 D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagementMVC\bin\PagedList.Mvc.dll
 D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagementMVC\bin\PagedList.xml
 D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagementMVC\bin\PagedList.Mvc.xml
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagementMVC\bin\DemoUserManagement.BussinessLogicLayer.dll.config

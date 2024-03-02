@@ -81,3 +81,13 @@ D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserMan
 D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.csproj.CopyComplete
 D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.dll
 D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\bin\Debug\DemoUserManagement.Utils.dll.config
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\bin\Debug\DemoUserManagement.Utils.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\bin\Debug\DemoUserManagement.Utils.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\bin\Debug\DemoUserManagement.Model.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\bin\Debug\DemoUserManagement.Model.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.csproj.AssemblyReference.cache
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.csproj.CoreCompileInputs.cache
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.csproj.CopyComplete
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Utils\obj\Debug\DemoUserManagement.Utils.pdb

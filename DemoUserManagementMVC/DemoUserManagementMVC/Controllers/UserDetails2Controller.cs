@@ -13,24 +13,18 @@ namespace DemoUserManagementMVC.Controllers
     public class UserDetails2Controller : Controller
     {
         // GET: UserDetails2
+
+        [CustomAuthentication]
+
         public ActionResult Index()
         {
             return View();
         }
 
+        [HttpPost]
         public void SaveAllDetails(AllDetailsModel userData)
         {
-            try
-            {
-                UserDetailsModel userDetails = userData.user;
-                userDetails.Addresses = userData.addresses;
-                userDetails.EducationDetails = userData.educations;
-                UserDetailsService.SaveUserDetails(userDetails);            
-            }
-            catch (Exception ex)
-            {
-                Logger.WriteLog(ex);
-            }
+            UserDetailsServiceMVC.SaveAllDetails(userData);
         }
 
         public JsonResult GetCountries()

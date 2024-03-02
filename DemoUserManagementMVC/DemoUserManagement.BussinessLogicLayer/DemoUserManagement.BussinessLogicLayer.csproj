@@ -32,7 +32,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +48,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDetailsService.cs" />
+    <Compile Include="UserDetailsServiceMVC.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DemoUserManagement.DataAccessLayer\DemoUserManagement.DataAccessLayer.csproj">
@@ -58,6 +63,9 @@
       <Project>{3380ceb7-ee1b-4871-b30e-d6154031dda5}</Project>
       <Name>DemoUserManagement.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

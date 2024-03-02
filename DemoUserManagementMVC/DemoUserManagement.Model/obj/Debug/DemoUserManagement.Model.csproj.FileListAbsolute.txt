@@ -64,3 +64,9 @@ D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserMan
 D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.csproj.CoreCompileInputs.cache
 D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.dll
 D:\Mindfire\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Model\bin\Debug\DemoUserManagement.Model.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Model\bin\Debug\DemoUserManagement.Model.pdb
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.csproj.AssemblyReference.cache
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.csproj.CoreCompileInputs.cache
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.dll
+D:\Mindfire\New folder\DemoUserManagementMVC\DemoUserManagement.Model\obj\Debug\DemoUserManagement.Model.pdb
