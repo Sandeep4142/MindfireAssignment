@@ -32,14 +32,14 @@ $(document).ready(function () {
         }
     });
 
-    // for sorting/paging
+    // Function to initialize sorting and pagination for the table
     function initializeTable(tableId) {
         const table = document.getElementById(tableId);
         const tbody = table.querySelector('tbody');
         const rows = Array.from(tbody.getElementsByTagName("tr"));
 
         const pagination = document.getElementById("pagination");
-        const itemsPerPage = 5; // Adjust as needed
+        const itemsPerPage = 5; 
         let totalPages = Math.ceil(rows.length / itemsPerPage);
         let currentPage = 1;
 
@@ -94,7 +94,7 @@ $(document).ready(function () {
         updatePagination();
 
         // Attach sorting event listeners to table headers
-        const headers = table.querySelectorAll('th');
+        const headers = table.querySelectorAll('th a');
         headers.forEach((header, index) => {
             header.onclick = () => sortTable(index);
         });
