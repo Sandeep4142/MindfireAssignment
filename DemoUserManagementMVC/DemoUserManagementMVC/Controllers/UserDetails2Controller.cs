@@ -15,9 +15,22 @@ namespace DemoUserManagementMVC.Controllers
         // GET: UserDetails2
 
         [CustomAuthentication]
-        public ActionResult Index()
+        public ActionResult Index(int id = 0)
         {
-            return View();
+            if (id == 0)
+            {
+                return View();
+            }
+            else
+            {
+                var notes = UserDetailsService.GetNotes(id, 1);
+                var documents = UserDetailsService.GetDocuments(id, 1);
+                ViewData["Notes"] = notes;
+                ViewData["Documents"] = documents;
+                ViewBag.ObjectId = id;
+                ViewBag.ObjectType = 1;
+                return View();
+            }         
         }
 
         [HttpPost]
