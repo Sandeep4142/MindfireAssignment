@@ -17,13 +17,24 @@ namespace DemoUserManagementMVC.Controllers
     {
         // GET: UserList2
         [CustomAuthentication]
-        public ActionResult Index(string sortExp,string sortDir, int? page)
+        public ActionResult Index(string sortExp, int? page)
         {
+            int currentPageIndex = page ?? 1;
             int pageSize = 5;
-            int currpage = page??1;
-            var users = UserDetailsServiceMVC.GetUserList(sortExp, sortDir, currpage, pageSize);
-            ViewBag.TotalUser = UserDetailsService.Lenusers();
             ViewBag.PageSize = pageSize;
+            string sortExpression = sortExp ?? "UserId";
+            string sortDirection;
+            if (sortExp == null)
+            {
+                sortDirection = "ASC";
+            }
+            else
+            {
+                sortDirection = (string)TempData["SortDirection"] == "ASC" ? "DSC" : "ASC";
+            }
+            TempData["SortDirection"] = sortDirection;
+            var users = UserDetailsService.Allusers(sortExpression, sortDirection, (currentPageIndex - 1) * pageSize, pageSize);
+            ViewBag.TotalUser = UserDetailsService.Lenusers();
             return View(users);
         }
 
