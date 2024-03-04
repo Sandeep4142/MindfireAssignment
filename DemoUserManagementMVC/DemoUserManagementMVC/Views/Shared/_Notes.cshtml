@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewBag.Title = "Index";
 }
 @model List<DemoUserManagement.Model.NotesModel>
@@ -10,35 +10,34 @@
     <button id="addNoteBtn" class="btn btn-primary" style="display: inline-block;">Add Note</button>
 </div>
 
-
 <div class="table-responsive">
-    <table class="table table-striped table-bordered">
+    <table id="notesTable" class="table table-striped table-bordered">
         <thead>
             <tr>
-                <th>NotesId</th>
-                <th>Note Text</th>
-                <th>TimeStamp</th>
+                <th onclick="sortTable('notesTable', 0)">NotesId</th>
+                <th onclick="sortTable('notesTable', 1)">Note Text</th>
+                <th onclick="sortTable('notesTable', 2)">TimeStamp</th>
             </tr>
         </thead>
-        <tbody>
-            @{
-                if (Model.Count > 0)
+        <tbody id="tableBody">
+            @if (Model.Count > 0)
+            {
+                foreach (var user in Model)
                 {
-                    foreach (var user in Model)
-                    {
-                        <tr>
-                            <td>@user.NoteID</td>
-                            <td>@user.NoteText</td>
-                            <td>@user.TimeStamp.ToString()</td>
-                        </tr>
-                    }
+                    <tr>
+                        <td>@user.NoteID</td>
+                        <td>@user.NoteText</td>
+                        <td>@user.TimeStamp.ToString()</td>
+                    </tr>
                 }
             }
         </tbody>
     </table>
+    <div id="pagination"></div>
 </div>
 
 <input type="hidden" id="noteObjectId" value="@ViewBag.ObjectId" />
 <input type="hidden" id="noteObjectType" value="@ViewBag.ObjectType" />
 
 <script src="~/Scripts/Notes.js"></script>
+
