@@ -55,6 +55,7 @@ namespace DemoUserManagementMVC.Controllers
                 session.UserId = userId;
                 session.IsAdmin = UserDetailsService.CheckIfUserIsAdmin(userId);
                 session.Email = email;
+                Session["User"] = session;
                 return true;
             }
             else
@@ -68,7 +69,7 @@ namespace DemoUserManagementMVC.Controllers
             FormsAuthentication.SignOut();
             Session.Clear();
             Session.Abandon();
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Index", "Login2");
         }
     }
 }
