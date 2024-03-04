@@ -35,7 +35,7 @@ $(document).ready(function () {
     // for sorting/paging
     function initializeDocumentTable(tableId) {
         const table = document.getElementById(tableId);
-        const tbody = document.getElementById(tableId + "Body");
+        const tbody = table.querySelector('tbody');
         const rows = Array.from(tbody.getElementsByTagName("tr"));
 
         const pagination = document.getElementById("documentPagination");
@@ -68,7 +68,7 @@ $(document).ready(function () {
             }
         }
 
-        function sortTable(tableId, columnIndex) {
+        function sortTable(columnIndex) {
             if (sortedColumnIndex === columnIndex) {
                 ascending = !ascending;
             } else {
@@ -94,13 +94,13 @@ $(document).ready(function () {
         updatePagination();
 
         // Attach sorting event listeners to table headers
-        const headers = table.querySelectorAll('th');
+        const headers = table.querySelectorAll('th a');
         headers.forEach((header, index) => {
-            header.onclick = () => sortTable(tableId, index);
+            header.onclick = () => sortTable(index);
         });
     }
 
-    // Call the function to initialize the table
+    // Call the function to initialize the document table
     initializeDocumentTable("documentTable");
 
 });
