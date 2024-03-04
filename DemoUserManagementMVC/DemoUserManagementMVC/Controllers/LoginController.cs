@@ -55,6 +55,7 @@ namespace DemoUserManagementMVC.Controllers
                 session.UserId = userId;
                 session.IsAdmin = UserDetailsService.CheckIfUserIsAdmin(userId);
                 session.Email = email;
+                Session["User"] = session;
                 return true;
             }
             else
