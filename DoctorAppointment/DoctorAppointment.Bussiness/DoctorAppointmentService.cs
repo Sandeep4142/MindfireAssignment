@@ -52,9 +52,9 @@ namespace DoctorAppointment.Bussiness
             return AppointmentDA.GetAppointmentList(doctorID);
         }
 
-        public static List<AppointmentModel> GetAppointmentList(int doctorID, int selectedMonth, int selectedYear)
+        public static List<AppointmentModel> GetDetailedAppointmentList(int doctorID, DateTime selectedMonth)
         {
-            return AppointmentDA.GetAppointmentList(doctorID, selectedMonth, selectedYear);
+            return AppointmentDA.GetDetailedAppointmentList(doctorID, selectedMonth);
         }
 
         public static List<AppointmentModel> GetUpcomingAppointments(int doctorID, DateTime selectedDate)
@@ -62,9 +62,9 @@ namespace DoctorAppointment.Bussiness
             return AppointmentDA.GetUpcomingAppointments(doctorID, selectedDate);
         }
 
-        public static List<SummaryReport> GetAppointmentSummaryReport(int doctorID, int selectedMonth, int selectedYear)
+        public static List<SummaryReport> GetAppointmentSummaryReport(int doctorID, DateTime selectedMonth)
         {
-            return AppointmentDA.GetAppointmentSummaryReport(doctorID, selectedMonth, selectedYear);
+            return AppointmentDA.GetAppointmentSummaryReport(doctorID, selectedMonth);
         }
 
         public static bool CloseAppointment(int appointmentID)

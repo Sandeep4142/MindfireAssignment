@@ -148,6 +148,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="CSS\BookAppointment.css" />
     <Content Include="CSS\DoctorLayout.css" />
+    <Content Include="CSS\Home.css" />
     <Content Include="CSS\Login.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -162,6 +163,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Home.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />

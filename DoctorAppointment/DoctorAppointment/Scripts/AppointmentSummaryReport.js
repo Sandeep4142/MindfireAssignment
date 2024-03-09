@@ -1,22 +1,20 @@
 ﻿$(document).ready(function () {
     var doctorID = $('#doctorID').val();
-    var selectedMonth = $('#selectedMonth').val();
-    var selectedYear = $('#selectedYear').val();
-    generateReport(doctorID, selectedMonth, selectedYear);
-    $('#selectedMonth, #selectedYear').change(function () {
-        selectedMonth = $('#selectedMonth').val();
-        selectedYear = $('#selectedYear').val();
-        generateReport(doctorID, selectedMonth, selectedYear);
+    var selectedMonth = $('#appointmentMonth').val();
+    generateReport(doctorID, selectedMonth);
+    $('#appointmentMonth').change(function () {
+        selectedMonth = $('#appointmentMonth').val();
+        generateReport(doctorID, selectedMonth);
     });
 
     $("#exportPDFButton").click(exportToPDF);
 });
 
-function generateReport(doctorID, selectedMonth, selectedYear) {
+function generateReport(doctorID, selectedMonth) {
     $.ajax({
         url: '/Doctor/GetAppointmentSummaryReport',
         type: 'POST',
-        data: { doctorID: doctorID, month: selectedMonth, year: selectedYear },
+        data: { doctorID: doctorID, month: selectedMonth },
         success: function (response) {
             var appointmentList = $('#appointmentList');
             appointmentList.empty();
@@ -54,9 +52,9 @@ function generateReport(doctorID, selectedMonth, selectedYear) {
 
 function exportToPDF() {
     var doc = new jsPDF();
-    var table = $("#appointmentDetailedReport");
+    var table = document.getElementById("appointmentDetailedReport");
     doc.autoTable({ html: table });
-    doc.save("appointment_report.pdf");
+    doc.save("appointment_summary_report.pdf");
 }
 
 

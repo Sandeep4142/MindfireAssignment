@@ -2,8 +2,6 @@
 using DoctorAppointment.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using DoctorAppointment.Utility;
 
@@ -32,10 +30,10 @@ namespace DoctorAppointment.Controllers
             return View();
         }
 
-        public ActionResult GetAppointmentDetailedReport(int doctorID, string month, string year)
+        public ActionResult GetAppointmentDetailedReport(int doctorID, DateTime month)
         {
             ViewBag.doctorID = doctorID;
-            List<AppointmentModel> appointmentList = DoctorAppointmentService.GetAppointmentList(doctorID, int.Parse(month), int.Parse(year));
+            List<AppointmentModel> appointmentList = DoctorAppointmentService.GetDetailedAppointmentList(doctorID, month);
             return Json(appointmentList, JsonRequestBehavior.AllowGet);
         }
 
@@ -46,9 +44,9 @@ namespace DoctorAppointment.Controllers
             return View();
         }
 
-        public ActionResult GetAppointmentSummaryReport(int doctorID, string month, string year)
+        public ActionResult GetAppointmentSummaryReport(int doctorID, DateTime month)
         {
-            List<SummaryReport> appointmentList = DoctorAppointmentService.GetAppointmentSummaryReport(doctorID, int.Parse(month), int.Parse(year));
+            List<SummaryReport> appointmentList = DoctorAppointmentService.GetAppointmentSummaryReport(doctorID, month);
             return Json(appointmentList, JsonRequestBehavior.AllowGet);
         }
 
@@ -64,6 +62,20 @@ namespace DoctorAppointment.Controllers
             ViewBag.doctorID = doctorID;
             List<AppointmentModel> appointmentList = DoctorAppointmentService.GetUpcomingAppointments(doctorID, selectedDate.Date);
             return Json(appointmentList, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public ActionResult CloseAppointment(int appointmentID)
+        {
+            var response = DoctorAppointmentService.CloseAppointment(appointmentID);
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public ActionResult CancelAppointment(int appointmentID)
+        {
+            var response = DoctorAppointmentService.CancelAppointment(appointmentID);
+            return Json(response, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -4,31 +4,7 @@
 @{
     ViewBag.Title = "Home Page";
 }
-
-<style>
-    .doctor-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-        .doctor-table th, .doctor-table td {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
-        .doctor-table th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-
-    .bookAppointmentBtn {
-        padding: 5px 10px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-    }
-</style>
+<link href="~/CSS/Home.css" rel="stylesheet" />
 
 <h1>Doctors</h1>
 
@@ -47,7 +23,7 @@
                 <td>@doctor.DoctorName</td>
                 <td>
                     @{
-                        DateTime baseDate = DateTime.Today; // Use any base date you prefer
+                        DateTime baseDate = DateTime.Today; 
                         DateTime startTime = baseDate.Add(doctor.DayStartTime);
                         DateTime endTime = baseDate.Add(doctor.DayEndTime);
                     }
@@ -62,12 +38,5 @@
 </table>
 
 @section scripts {
-    <script>
-        $(document).ready(function () {
-            $(".bookAppointmentBtn").click(function () {
-                var doctorID = $(this).data('doctor-id');
-                window.location.href = "/Appointment/BookAppointment/" + doctorID;
-            });
-        });
-    </script>
+    <script src="~/Scripts/Home.js"></script>
 }

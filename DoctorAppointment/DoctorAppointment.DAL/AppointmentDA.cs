@@ -104,7 +104,7 @@ namespace DoctorAppointment.DAL
             }
         }
 
-        public static List<AppointmentModel> GetAppointmentList(int doctorID, int selectedMonth, int selectedYear)
+        public static List<AppointmentModel> GetDetailedAppointmentList(int doctorID, DateTime selectedMonth)
         {
             try
             {
@@ -112,14 +112,8 @@ namespace DoctorAppointment.DAL
                 {
                     List<AppointmentModel> appointmentList = context.Appointments
                         .Where(e => e.DoctorID == doctorID &&
-                                    DbFunctions.CreateDateTime
-                                    (e.AppointmentDate.Year, e.AppointmentDate.Month, 1, 0, 0, 0)
-                                    <= DbFunctions.CreateDateTime(selectedYear, selectedMonth, 1, 0, 0, 0) &&
-                                    DbFunctions.CreateDateTime(e.AppointmentDate.Year, e.AppointmentDate.Month,
-                                    DbFunctions.DiffDays(DbFunctions.CreateDateTime
-                                    (e.AppointmentDate.Year, e.AppointmentDate.Month, 1, 0, 0, 0),
-                                    e.AppointmentDate) + 1, 0, 0, 0) >= DbFunctions.CreateDateTime
-                                    (selectedYear, selectedMonth, 1, 0, 0, 0))
+                                    e.AppointmentDate.Year == selectedMonth.Year &&
+                                    e.AppointmentDate.Month == selectedMonth.Month)
                         .OrderBy(e => e.AppointmentDate)
                         .ThenBy(e => e.AppointmentTime)
                         .Select(appointment => new AppointmentModel()
@@ -144,7 +138,8 @@ namespace DoctorAppointment.DAL
             }
         }
 
-        public static List<SummaryReport> GetAppointmentSummaryReport(int doctorID, int selectedMonth, int selectedYear)
+
+        public static List<SummaryReport> GetAppointmentSummaryReport(int doctorID, DateTime selectedMonth)
         {
             try
             {
@@ -152,12 +147,8 @@ namespace DoctorAppointment.DAL
                 {
                     List<SummaryReport> appointmentList = context.Appointments
                         .Where(e => e.DoctorID == doctorID &&
-                                    DbFunctions.CreateDateTime(e.AppointmentDate.Year, e.AppointmentDate.Month, 1, 0, 0, 0)
-                                    <= DbFunctions.CreateDateTime(selectedYear, selectedMonth, 1, 0, 0, 0) &&
-                                    DbFunctions.CreateDateTime(e.AppointmentDate.Year, e.AppointmentDate.Month,
-                                    DbFunctions.DiffDays(DbFunctions.CreateDateTime(e.AppointmentDate.Year,
-                                    e.AppointmentDate.Month, 1, 0, 0, 0), e.AppointmentDate) + 1, 0, 0, 0) 
-                                    >= DbFunctions.CreateDateTime(selectedYear, selectedMonth, 1, 0, 0, 0))
+                                    e.AppointmentDate.Year == selectedMonth.Year &&
+                                    e.AppointmentDate.Month == selectedMonth.Month)
                         .OrderBy(e => e.AppointmentDate)
                         .ThenBy(e => e.AppointmentTime)
                         .GroupBy(e => e.AppointmentDate)

@@ -1,9 +1,7 @@
 ﻿$(document).ready(function () {
     var defaultDate = new Date();
     var formattedDefaultDate = defaultDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
-
     $('#datepicker').val(formattedDefaultDate);
-
     fetchAvailableTimeSlots(formattedDefaultDate);
 
     $('#datepicker').change(function () {

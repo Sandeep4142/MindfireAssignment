@@ -10,22 +10,8 @@
 <input type="hidden" id="doctorID" value=@ViewBag.doctorID>
 
 <div>
-    Select Month:
-    <select id="selectedMonth">
-        @for (int i = 1; i <= 12; i++)
-        {
-            <option value="@i" @(DateTime.Now.Month == i ? "selected" : "")>@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)</option>
-        }
-    </select>
-
-    Select Year:
-    <select id="selectedYear">
-        @for (int i = DateTime.Now.Year; i >= DateTime.Now.Year - 10; i--)
-        {
-            <option value="@i" @(DateTime.Now.Year == i ? "selected" : "")>@i</option>
-        }
-    </select>
-
+    <label for="appointmentMonth">Select Month</label>
+    <input type="month" id="appointmentMonth" name="appointmentMonth" value="@DateTime.Now.ToString("yyyy-MM")">
     <button id="exportPDFButton" class="btn btn-outline-dark">Export to PDF</button>
 </div>
 

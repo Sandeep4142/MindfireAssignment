@@ -2,8 +2,6 @@
 using DoctorAppointment.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace DoctorAppointment.Controllers
@@ -40,20 +38,6 @@ namespace DoctorAppointment.Controllers
         public ActionResult BookAppointment(AppointmentModel appointmentData)
         {
             bool response = DoctorAppointmentService.BookAppointment(appointmentData);
-            return Json(response, JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpPost]
-        public ActionResult CloseAppointment(int appointmentID)
-        {
-            var response = DoctorAppointmentService.CloseAppointment(appointmentID);
-            return Json(response, JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpPost]
-        public ActionResult CancelAppointment(int appointmentID)
-        {
-            var response = DoctorAppointmentService.CancelAppointment(appointmentID);
             return Json(response, JsonRequestBehavior.AllowGet);
         }
 

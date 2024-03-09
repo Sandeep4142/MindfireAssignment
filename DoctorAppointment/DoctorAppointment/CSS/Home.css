@@ -1,0 +1,22 @@
+﻿.doctor-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.doctor-table th, .doctor-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.doctor-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.bookAppointmentBtn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

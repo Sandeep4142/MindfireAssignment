@@ -51,13 +51,12 @@ function GetUpcomingAppointments(doctorID, selectedDate) {
 function formatTimeSpan(timeSpan) {
     var hours = timeSpan.Hours.toString().padStart(2, '0');
     var minutes = timeSpan.Minutes.toString().padStart(2, '0');
-    var seconds = timeSpan.Seconds.toString().padStart(2, '0');
     return hours + ':' + minutes;
 }
 
 function closeAppointment(appointmentID) {
     $.ajax({
-        url: '/Appointment/CloseAppointment',
+        url: '/Doctor/CloseAppointment',
         type: 'POST',
         data: { appointmentID: appointmentID },
         success: function (response) {
@@ -75,7 +74,7 @@ function closeAppointment(appointmentID) {
 
 function cancelAppointment(appointmentID) {
     $.ajax({
-        url: '/Appointment/CancelAppointment',
+        url: '/Doctor/CancelAppointment',
         type: 'POST',
         data: { appointmentID: appointmentID },
         success: function (response) {
