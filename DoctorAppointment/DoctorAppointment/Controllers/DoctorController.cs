@@ -25,6 +25,7 @@ namespace DoctorAppointment.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [CustomAuthentication]
         public ActionResult AppointmentDetailedReport(int doctorID)
         {
             ViewBag.doctorID = doctorID;
@@ -38,6 +39,7 @@ namespace DoctorAppointment.Controllers
             return Json(appointmentList, JsonRequestBehavior.AllowGet);
         }
 
+        [CustomAuthentication]
         public ActionResult AppointmentSummaryReport(int doctorID)
         {
             ViewBag.doctorID = doctorID;
@@ -50,6 +52,7 @@ namespace DoctorAppointment.Controllers
             return Json(appointmentList, JsonRequestBehavior.AllowGet);
         }
 
+        [CustomAuthentication]
         public ActionResult UpcomingAppointments(int doctorID)
         {
             ViewBag.doctorID = doctorID;
