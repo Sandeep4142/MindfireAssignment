@@ -1,0 +1,55 @@
+﻿@model DoctorAppointment.Model.UserModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Register</h2>
+    @using (Html.BeginForm("Register", "Doctor", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter Name" })
+            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Doctor.AppointmentSlotTime, "Appointment Slot Time")
+            @Html.DropDownListFor(m => m.Doctor.AppointmentSlotTime, new SelectList(new[]
+            {
+                new SelectListItem { Text = "15 minutes", Value = "15" },
+                new SelectListItem { Text = "30 minutes", Value = "30" },
+                new SelectListItem { Text = "45 minutes", Value = "45" },
+                new SelectListItem { Text = "60 minutes", Value = "60" },
+            }, "Value", "Text"), "Select time slot", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Doctor.AppointmentSlotTime, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Doctor.DayStartTime, "Day Start Time")
+            @Html.TextBoxFor(m => m.Doctor.DayStartTime, new { @class = "form-control", type = "time" })
+            @Html.ValidationMessageFor(m => m.Doctor.DayStartTime, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Doctor.DayEndTime, "Day End Time")
+            @Html.TextBoxFor(m => m.Doctor.DayEndTime, new { @class = "form-control", type = "time" })
+            @Html.ValidationMessageFor(m => m.Doctor.DayEndTime, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Enter Email" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Enter Password" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

@@ -1,0 +1,17 @@
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Bussiness.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Bussiness.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.DAL.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Model.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Utility.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\EntityFramework.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.DAL.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.DAL.dll.config
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Model.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Utility.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\EntityFramework.xml
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\obj\Debug\DoctorAppointment.Bussiness.csproj.AssemblyReference.cache
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\obj\Debug\DoctorAppointment.Bussiness.csproj.CoreCompileInputs.cache
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\obj\Debug\DoctorAppointment.Bussiness.csproj.CopyComplete
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\obj\Debug\DoctorAppointment.Bussiness.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\obj\Debug\DoctorAppointment.Bussiness.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Bussiness\bin\Debug\DoctorAppointment.Utility.dll.config

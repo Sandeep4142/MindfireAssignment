@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            <h4 class="d-inline text-center text-light">Book Doctor Appointment</h4>
+            <div>
+                @{
+                    if (Session["User"] == null)
+                    {
+                        <span class="ms-2 text-light">Are you Doctor ?</span>
+                        @Html.ActionLink("Login/Register", "login", "Home", new { area = "" }, new { @class = "ms-3 btn btn-primary" })
+
+                    }
+                    else
+                    {
+                        @Html.ActionLink("LogOut", "LogOut", "Home", new { area = "" }, new { @class = "ms-3 btn btn-primary" })
+
+                    }
+                }
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script src="https://cdn.datatables.net/v/dt/dt-2.0.1/datatables.min.js"></script>
+
+</body>
+</html>

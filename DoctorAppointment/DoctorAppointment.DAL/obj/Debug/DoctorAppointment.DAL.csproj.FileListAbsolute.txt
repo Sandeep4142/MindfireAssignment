@@ -1,0 +1,17 @@
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.DAL.dll.config
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.DAL.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.DAL.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.Model.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.Utility.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\EntityFramework.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.Model.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.Utility.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\EntityFramework.xml
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\obj\Debug\DoctorAppointment.DAL.csproj.AssemblyReference.cache
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\obj\Debug\DoctorAppointment.DAL.csproj.CoreCompileInputs.cache
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\obj\Debug\DoctorAppointment.DAL.csproj.CopyComplete
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\obj\Debug\DoctorAppointment.DAL.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\obj\Debug\DoctorAppointment.DAL.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.DAL\bin\Debug\DoctorAppointment.Utility.dll.config

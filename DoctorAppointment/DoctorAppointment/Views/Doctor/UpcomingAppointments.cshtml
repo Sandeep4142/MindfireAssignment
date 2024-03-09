@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "UpcomingAppointments";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+
+<h2 class="text-center">Upcoming Appointments</h2>
+<input type="hidden" id="doctorID" value=@ViewBag.doctorID>
+
+<label for="datepicker">Select date : </label>
+<input type="date" id="datepicker" class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+<div class="table-responsive">
+    <table class="table table-bordered" id="appointmentDetailedReport">
+        <thead>
+            <tr>
+                <th>Appointment Time</th>
+                <th>Patient Name</th>
+                <th>Status</th>
+                <th>Change Status</th>
+            </tr>
+        </thead>
+        <tbody id="appointmentList">
+        </tbody>
+
+    </table>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/UpcomingAppointments.js"></script>
+}
+
+

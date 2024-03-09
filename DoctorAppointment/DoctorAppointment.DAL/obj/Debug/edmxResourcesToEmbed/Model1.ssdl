@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DoctorAppointmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="AppointmentID" />
+    </Key>
+    <Property Name="AppointmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AppointmentDate" Type="date" Nullable="false" />
+    <Property Name="AppointmentTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="DoctorID" Type="int" />
+    <Property Name="PatientName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PatientEmail" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PatientPhone" Type="int" Nullable="false" />
+    <Property Name="AppointmentStatus" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="DoctorID" />
+    </Key>
+    <Property Name="DoctorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DoctorName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="AppointmentSlotTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="DayStartTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="DayEndTime" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Appointme__Docto__5070F446">
+    <End Role="Doctor" Type="Self.Doctor" Multiplicity="0..1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctor">
+        <PropertyRef Name="DoctorID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="DoctorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Doctor__UserID__4D94879B">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Doctor" Type="Self.Doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Doctor">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DoctorAppointmentModelStoreContainer">
+    <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Doctor" EntityType="Self.Doctor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Appointme__Docto__5070F446" Association="Self.FK__Appointme__Docto__5070F446">
+      <End Role="Doctor" EntitySet="Doctor" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Doctor__UserID__4D94879B" Association="Self.FK__Doctor__UserID__4D94879B">
+      <End Role="User" EntitySet="User" />
+      <End Role="Doctor" EntitySet="Doctor" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,73 @@
+﻿@model List<DoctorAppointment.Model.DoctorModel>
+@using DoctorAppointment.Model
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .doctor-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .doctor-table th, .doctor-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .doctor-table th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+    .bookAppointmentBtn {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+<h1>Doctors</h1>
+
+<table class="doctor-table">
+    <thead>
+        <tr>
+            <th>Doctor</th>
+            <th>Appointment Time</th>
+            <th>Book Appointment</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DoctorModel doctor in Model)
+        {
+            <tr>
+                <td>@doctor.DoctorName</td>
+                <td>
+                    @{
+                        DateTime baseDate = DateTime.Today; // Use any base date you prefer
+                        DateTime startTime = baseDate.Add(doctor.DayStartTime);
+                        DateTime endTime = baseDate.Add(doctor.DayEndTime);
+                    }
+                    @startTime.ToString("hh:mm tt") - @endTime.ToString("hh:mm tt")
+                </td>
+                <td>
+                    <button class="bookAppointmentBtn" data-doctor-id="@doctor.DoctorID">Book Appointment</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $(".bookAppointmentBtn").click(function () {
+                var doctorID = $(this).data('doctor-id');
+                window.location.href = "/Appointment/BookAppointment/" + doctorID;
+            });
+        });
+    </script>
+}

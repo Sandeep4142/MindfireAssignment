@@ -1,0 +1,6 @@
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Model\bin\Debug\DoctorAppointment.Model.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Model\bin\Debug\DoctorAppointment.Model.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Model\obj\Debug\DoctorAppointment.Model.csproj.AssemblyReference.cache
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Model\obj\Debug\DoctorAppointment.Model.csproj.CoreCompileInputs.cache
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Model\obj\Debug\DoctorAppointment.Model.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Model\obj\Debug\DoctorAppointment.Model.pdb
