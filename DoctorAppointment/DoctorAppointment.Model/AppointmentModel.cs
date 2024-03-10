@@ -16,7 +16,6 @@ namespace DoctorAppointment.Model
 
         [Required(ErrorMessage = "Appointment Time is required")]
         public TimeSpan AppointmentTime { get; set; }
-
         public int? DoctorID { get; set; }
 
         [Required(ErrorMessage = "Name is required")]
@@ -29,9 +28,7 @@ namespace DoctorAppointment.Model
         [Required(ErrorMessage = "Phone is required")]
         [Phone(ErrorMessage = "Invalid Phone Number")]
         public int PatientPhone { get; set; }
-
         public string AppointmentStatus { get; set; }
-
         public virtual DoctorModel Doctor { get; set; }
     }
 }

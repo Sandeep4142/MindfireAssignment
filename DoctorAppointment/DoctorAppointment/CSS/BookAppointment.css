@@ -11,20 +11,12 @@
     cursor: pointer;
 }
 
-    .time-slot.selected {
-        background-color: #007bff;
-        color: #fff;
-    }
+.time-slot.selected {
+    background-color: #007bff;
+    color: #fff;
+}
 
 .form-group {
     margin-bottom: 10px;
 }
 
-.appointmentBookContainer {
-    border: 1px solid black;
-    padding: 10px;
-}
-
-.appointmentDateContainer {
-    border-right: 1px solid black;
-}

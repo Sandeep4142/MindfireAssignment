@@ -14,8 +14,12 @@ namespace DoctorAppointment.Controllers
             return View();
         }
 
-        public ActionResult BookAppointment(int id)
+        public ActionResult BookAppointment(int? id)
         {
+            if(id == null)
+            {
+                return RedirectToAction("Index","Home");
+            }
             ViewBag.DoctorID = id;
             return View();
         }

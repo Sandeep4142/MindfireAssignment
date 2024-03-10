@@ -19,8 +19,17 @@ namespace DoctorAppointment.Controllers
         [HttpPost]
         public ActionResult Register(UserModel user)
         {
-            DoctorAppointmentService.RegisterDoctor(user);
-            return RedirectToAction("Index", "Home");
+            bool isRegistered = DoctorAppointmentService.RegisterDoctor(user);
+            if (isRegistered)
+            {
+                TempData["RegistrationMessage"] = "Registration successful!";
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                TempData["RegistrationMessage"] = "Registration failed!";
+                return RedirectToAction("Register");
+            }
         }
 
         [CustomAuthentication]

@@ -18,11 +18,14 @@ function generateReport(doctorID, selectedMonth) {
         success: function (response) {
             var appointmentList = $('#appointmentList');
             appointmentList.empty();
+            if (response == null || response.length === 0) {
+                appointmentList.append('<tr><td colspan="4"><h4 class="text-center">No appointments</h4></td></tr>');
+                return;
+            }
 
             var previousDate = null;
             $.each(response, function (index, appointment) {
                 var row = $('<tr>');
-
                 var timestamp = parseInt(appointment.AppointmentDate.match(/\d+/)[0]);
                 var appointmentDate = new Date(timestamp);
 
@@ -31,7 +34,6 @@ function generateReport(doctorID, selectedMonth) {
                 var month = (appointmentDate.getMonth() + 1).toString().padStart(2, '0');
                 var year = appointmentDate.getFullYear();
                 appointmentDate = day + '-' + month + '-' + year;
-
                 var appointmentTime = formatTimeSpan(appointment.AppointmentTime);
 
                 // Append to row

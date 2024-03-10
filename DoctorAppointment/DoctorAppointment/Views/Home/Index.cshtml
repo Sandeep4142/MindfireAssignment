@@ -6,8 +6,14 @@
 }
 <link href="~/CSS/Home.css" rel="stylesheet" />
 
-<h1>Doctors</h1>
+@if (TempData["RegistrationMessage"] != null)
+{
+    <script>
+        alert('@TempData["RegistrationMessage"]');
+    </script>
+}
 
+<h1>Doctors</h1>
 <table class="doctor-table">
     <thead>
         <tr>
@@ -23,7 +29,7 @@
                 <td>@doctor.DoctorName</td>
                 <td>
                     @{
-                        DateTime baseDate = DateTime.Today; 
+                        DateTime baseDate = DateTime.Today;
                         DateTime startTime = baseDate.Add(doctor.DayStartTime);
                         DateTime endTime = baseDate.Add(doctor.DayEndTime);
                     }

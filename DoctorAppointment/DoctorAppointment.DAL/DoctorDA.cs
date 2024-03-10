@@ -33,7 +33,6 @@ namespace DoctorAppointment.DAL
                     }
                 }
                 return doctorList;
-
             }
             catch (Exception ex)
             {

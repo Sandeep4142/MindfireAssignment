@@ -43,5 +43,11 @@ namespace DoctorAppointment.Controllers
             Session.Abandon();
             return RedirectToAction("Index", "Home");
         }
+
+        public ActionResult CheckEmailExist(string email)
+        {
+            var response = DoctorAppointmentService.CheckEmailExist(email);
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
     }
 }

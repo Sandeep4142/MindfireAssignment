@@ -8,9 +8,11 @@
 <h2 class="text-center">Appointment Summary Report</h2>
 <input type="hidden" id="doctorID" value=@ViewBag.doctorID>
 
-<div>
-    <label for="appointmentMonth">Select Month</label>
-    <input type="month" id="appointmentMonth" name="appointmentMonth" value="@DateTime.Now.ToString("yyyy-MM")">
+<div class="d-flex justify-content-between mb-3">
+    <div>
+        <label for="appointmentMonth">Select Month :</label>
+        <input type="month" id="appointmentMonth" class="form-control" name="appointmentMonth" value="@DateTime.Now.ToString("yyyy-MM")">
+    </div>
     <button id="exportPDFButton" class="btn btn-outline-dark">Export to PDF</button>
 </div>
 

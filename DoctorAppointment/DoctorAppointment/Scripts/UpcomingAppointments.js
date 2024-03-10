@@ -17,9 +17,13 @@ function GetUpcomingAppointments(doctorID, selectedDate) {
         type: 'POST',
         data: { doctorID: doctorID, selectedDate: selectedDate },
         success: function (data) {
-            console.log(data);
             var appointmentList = $('#appointmentList');
             appointmentList.empty();
+            if (data == null || data.length === 0) {
+                appointmentList.append('<tr><td colspan="4"><h4 class="text-center">No appointments</h4></td></tr>');
+                return;
+            }
+
             $.each(data, function (index, appointment) {
 
                 var row = $('<tr>');

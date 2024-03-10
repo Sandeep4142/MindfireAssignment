@@ -11,12 +11,11 @@
     @using (Html.BeginForm("BookAppointment", "Appointment", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
-
         @Html.ValidationSummary(true)
 
         <div class="row appointmentBookContainer">
 
-            <div class="col-md-6 appointmentDateContainer">
+            <div class="col-md-6 appointmentDateContainer border border-2 p-5">
                 <div class="form-group ">
                     @Html.LabelFor(model => model.AppointmentDate)
                     <input type="date" id="datepicker" class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
@@ -29,7 +28,8 @@
                 </div>
             </div>
 
-            <div class="col-md-6 patientDetailContainer">
+            <div class="col-md-6 patientDetailContainer border border-2 p-5">
+                <h5>Enter your details :</h5>
                 <div class="form-group">
                     <label for="PatientName">Name</label>
                     @Html.TextBoxFor(model => model.PatientName, new { @class = "form-control", required = "required" })

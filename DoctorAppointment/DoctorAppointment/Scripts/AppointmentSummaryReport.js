@@ -18,6 +18,10 @@ function generateReport(doctorID, selectedMonth) {
         success: function (response) {
             var appointmentList = $('#appointmentList');
             appointmentList.empty();
+            if (response == null || response.length === 0) {
+                appointmentList.append('<tr><td colspan="4"><h4 class="text-center">No appointments</h4></td></tr>');
+                return;
+            }
 
             $.each(response, function (index, appointment) {
                 var timestamp = parseInt(appointment.date.match(/\d+/)[0]);

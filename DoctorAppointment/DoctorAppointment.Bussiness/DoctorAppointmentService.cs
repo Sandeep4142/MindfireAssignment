@@ -22,6 +22,11 @@ namespace DoctorAppointment.Bussiness
             return UserDA.RegisterDoctor(user);
         }
 
+        public static bool CheckEmailExist(string email)
+        {
+            return  UserDA.CheckEmailExists(email);
+        }
+
         public static List<DoctorModel> GetDoctorList()
         {
             return DoctorDA.GetAllDoctors();

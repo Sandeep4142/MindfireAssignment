@@ -149,7 +149,7 @@
     <Content Include="CSS\BookAppointment.css" />
     <Content Include="CSS\DoctorLayout.css" />
     <Content Include="CSS\Home.css" />
-    <Content Include="CSS\Login.css" />
+    <Content Include="CSS\LoginRegister.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -175,6 +175,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Register.js" />
     <Content Include="Scripts\UpcomingAppointments.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

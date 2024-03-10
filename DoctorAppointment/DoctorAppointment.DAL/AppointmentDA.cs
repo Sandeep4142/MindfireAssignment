@@ -138,7 +138,6 @@ namespace DoctorAppointment.DAL
             }
         }
 
-
         public static List<SummaryReport> GetAppointmentSummaryReport(int doctorID, DateTime selectedMonth)
         {
             try

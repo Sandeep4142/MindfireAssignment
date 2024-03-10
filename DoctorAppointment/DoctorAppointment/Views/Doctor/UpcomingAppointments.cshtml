@@ -2,12 +2,14 @@
     ViewBag.Title = "UpcomingAppointments";
     Layout = "~/Views/Shared/_DoctorLayout.cshtml";
 }
-
 <h2 class="text-center">Upcoming Appointments</h2>
 <input type="hidden" id="doctorID" value=@ViewBag.doctorID>
 
-<label for="datepicker">Select date : </label>
-<input type="date" id="datepicker" class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+<div class="mb-3">
+    <label for="datepicker">Select date : </label>
+    <input type="date" id="datepicker" class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+</div>
+
 <div class="table-responsive">
     <table class="table table-bordered" id="appointmentDetailedReport">
         <thead>
@@ -20,7 +22,6 @@
         </thead>
         <tbody id="appointmentList">
         </tbody>
-
     </table>
 </div>
 

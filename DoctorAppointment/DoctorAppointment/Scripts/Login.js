@@ -1,10 +1,13 @@
 ﻿$(document).ready(function () {
     $('#loginBtn').click(function (event) {
+        // Manually trigger form validation
+        var form = $('form')[0];
+        if (form.checkValidity() === false) {
+            return;
+        }
         // Prevent default form submission
         event.preventDefault();
 
-        // Your existing CheckUser function code here...
-        console.log("login clicked");
         var email = $('#loginEmail').val();
         var password = $('#loginPassword').val();
 

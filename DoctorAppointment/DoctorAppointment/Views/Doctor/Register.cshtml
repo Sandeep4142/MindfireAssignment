@@ -1,55 +1,72 @@
 ﻿@model DoctorAppointment.Model.UserModel
-
 @{
-    ViewBag.Title = "Register";
+    Layout = null;
 }
-
-<div class="container mt-5">
-    <h2 class="mb-4">Register</h2>
-    @using (Html.BeginForm("Register", "Doctor", FormMethod.Post))
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="~/CSS/LoginRegister.css" rel="stylesheet" />
+</head>
+<body>
+    @if (TempData["RegistrationMessage"] != null)
     {
-        @Html.AntiForgeryToken()
-        <div class="form-group">
-            @Html.LabelFor(m => m.Name)
-            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter Name" })
-            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Doctor.AppointmentSlotTime, "Appointment Slot Time")
-            @Html.DropDownListFor(m => m.Doctor.AppointmentSlotTime, new SelectList(new[]
-            {
-                new SelectListItem { Text = "15 minutes", Value = "15" },
-                new SelectListItem { Text = "30 minutes", Value = "30" },
-                new SelectListItem { Text = "45 minutes", Value = "45" },
-                new SelectListItem { Text = "60 minutes", Value = "60" },
-            }, "Value", "Text"), "Select time slot", new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.Doctor.AppointmentSlotTime, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Doctor.DayStartTime, "Day Start Time")
-            @Html.TextBoxFor(m => m.Doctor.DayStartTime, new { @class = "form-control", type = "time" })
-            @Html.ValidationMessageFor(m => m.Doctor.DayStartTime, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Doctor.DayEndTime, "Day End Time")
-            @Html.TextBoxFor(m => m.Doctor.DayEndTime, new { @class = "form-control", type = "time" })
-            @Html.ValidationMessageFor(m => m.Doctor.DayEndTime, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Email)
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Enter Email" })
-            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Password)
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Enter Password" })
-            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <script>
+        alert('@TempData["RegistrationMessage"]');
+        </script>
     }
-</div>
+    <div class="container">
+        <h2>Register</h2>
+        @using (Html.BeginForm("Register", "Doctor", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Enter Name", required = "required" })
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Doctor.AppointmentSlotTime, "Appointment Slot Time")
+                @Html.DropDownListFor(m => m.Doctor.AppointmentSlotTime, new SelectList(new[]
+                {
+                    new SelectListItem { Text = "15 minutes", Value = "15" },
+                    new SelectListItem { Text = "30 minutes", Value = "30" },
+                    new SelectListItem { Text = "45 minutes", Value = "45" },
+                    new SelectListItem { Text = "60 minutes", Value = "60" },
+                }, "Value", "Text"), "Select time slot", new { @class = "form-control", required = "required" })
+                @Html.ValidationMessageFor(m => m.Doctor.AppointmentSlotTime, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Doctor.DayStartTime, "Day Start Time")
+                @Html.TextBoxFor(m => m.Doctor.DayStartTime, new { @class = "form-control", type = "time", required = "required" })
+                @Html.ValidationMessageFor(m => m.Doctor.DayStartTime, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Doctor.DayEndTime, "Day End Time")
+                @Html.TextBoxFor(m => m.Doctor.DayEndTime, new { @class = "form-control", type = "time", required = "required" })
+                @Html.ValidationMessageFor(m => m.Doctor.DayEndTime, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email)
+                @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Email", type = "email" } })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Enter Password", required = "required" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        }
+    </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/Register.js"></script>
+</body>
+</html>

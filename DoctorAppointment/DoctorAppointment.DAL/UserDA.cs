@@ -79,6 +79,22 @@ namespace DoctorAppointment.DAL
             }
         }
 
+        public static bool CheckEmailExists(string email)
+        {
+            try
+            {
+                using (var context = new DoctorAppointmentEntities())
+                {
+                    return context.Users.Any(u => u.Email == email);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return false;
+            }
+        }
+
     }
 }
 
