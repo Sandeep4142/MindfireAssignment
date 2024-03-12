@@ -14,6 +14,7 @@ Date         # of Appointments   # of Appointment Closed   # of Appointment Canc
 2020-02-21   5                   5                         0
 2020-02-22   5                   2                         0
 ...
+
 -Appointment Detailed Report :
 filter by month, export to pdf feature
 ```
@@ -24,6 +25,7 @@ Date         Patient Name   Status
 2020-02-21   Patient 06     Closed
              Patient 07     Closed
 ```
+
 2. Patient interface -
 List of all doctor will be visible with doctor name, appointment time and bookAppointment link.
 When bookAppointment is clicked it will redirect to BookAppointment page.
