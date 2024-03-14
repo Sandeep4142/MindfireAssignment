@@ -1,5 +1,6 @@
 ﻿using DoctorAppointment.Bussiness;
 using DoctorAppointment.Model;
+using DoctorAppointment.Utility;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -14,25 +15,32 @@ namespace DoctorAppointment.Controllers
             return View();
         }
 
-        public ActionResult BookAppointment(int? id)
+        public ActionResult BookAppointment(int id)
         {
-            if(id == null)
+            if (id == 0)
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index", "Home");
             }
             ViewBag.DoctorID = id;
+            var doctorName = DoctorAppointmentService.GetDoctorDetails(id).DoctorName;
+            if(doctorName == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            ViewBag.DoctorName = doctorName;
             return View();
         }
 
         public JsonResult GetAvailableTimeSlots(string selectedDate, int doctorID)
         {
             DateTime date = DateTime.Parse(selectedDate);
-            List<TimeSpan> availableTimeSlots = DoctorAppointmentService.GetAvailableTimeSlots(date, doctorID);
+            TimeSlotAvailability timeSlots = DoctorAppointmentService.GetAvailableTimeSlots(date, doctorID);
             TimeSpan doctorSlotTime = DoctorAppointmentService.GetDoctorDetails(doctorID).AppointmentSlotTime;
 
             var slotsData = new Dictionary<string, object>
             {
-                { "availableTimeSlots", availableTimeSlots },
+                { "availableTimeSlots", timeSlots.AvailableTimeSlots },
+                { "existingAppointments", timeSlots.ExistingAppointments },
                 { "doctorSlotTime", doctorSlotTime }
              };
             return Json(slotsData, JsonRequestBehavior.AllowGet);

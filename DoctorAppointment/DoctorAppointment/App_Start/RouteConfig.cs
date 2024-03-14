@@ -32,6 +32,12 @@ namespace DoctorAppointment
             );
 
             routes.MapRoute(
+                name: "UpdateDoctorDetails",
+                url: "Doctor/UpdateDoctorDetails/{doctorID}",
+                defaults: new { controller = "Doctor", action = "UpdateDoctorDetails", doctorID = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

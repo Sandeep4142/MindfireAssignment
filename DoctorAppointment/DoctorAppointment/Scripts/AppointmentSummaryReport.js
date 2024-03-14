@@ -24,7 +24,7 @@ function generateReport(doctorID, selectedMonth) {
             }
 
             $.each(response, function (index, appointment) {
-                var timestamp = parseInt(appointment.date.match(/\d+/)[0]);
+                var timestamp = parseInt(appointment.Date.match(/\d+/)[0]);
                 var appointmentDate = new Date(timestamp);
 
                 // Extract day, month, and year components
@@ -36,11 +36,10 @@ function generateReport(doctorID, selectedMonth) {
                 //append to row
                 var row = $('<tr>');      
                 row.append('<td>' + appointmentDate + '</td>');
-                row.append('<td>' + appointment.totalAppointments + '</td>');
-                row.append('<td>' + appointment.totalClosedAppointments + '</td>');
-                row.append('<td>' + appointment.totalCancelledAppointments + '</td>');
-                appointmentList.append(row);
-                
+                row.append('<td>' + appointment.TotalAppointments + '</td>');
+                row.append('<td>' + appointment.TotalClosedAppointments + '</td>');
+                row.append('<td>' + appointment.TotalCancelledAppointments + '</td>');
+                appointmentList.append(row);              
             });
 
             console.log("response--")
@@ -54,12 +53,34 @@ function generateReport(doctorID, selectedMonth) {
     });
 }
 
+//function exportToPDF() {
+//    var doc = new jsPDF();
+//    var table = document.getElementById("appointmentDetailedReport");
+//    doc.autoTable({ html: table });
+//    doc.save("appointment_summary_report.pdf");
+//}
+
 function exportToPDF() {
     var doc = new jsPDF();
-    var table = document.getElementById("appointmentDetailedReport");
-    doc.autoTable({ html: table });
-    doc.save("appointment_summary_report.pdf");
+    var table = document.getElementById("appointmentSummaryReport");
+
+    // Add doctor name and date as heading
+    var doctorName = document.getElementById("doctorName").innerHTML;
+    var selectedMonth = document.getElementById("appointmentMonth").value;
+
+    var heading = "<div style='font-size: 18px; font-weight: bold;'>Appointment Detailed Report</div><br>" +
+        "<div>Doctor : " + doctorName + "</div>" +
+        "<div>Month  : " + selectedMonth + "</div><br>";
+    doc.fromHTML(heading, 15, 10);
+
+    // Add table to PDF
+    doc.autoTable({
+        html: table,
+        startY: 30
+    });
+    doc.save("appointment_Summary_report.pdf");
 }
+
 
 
 

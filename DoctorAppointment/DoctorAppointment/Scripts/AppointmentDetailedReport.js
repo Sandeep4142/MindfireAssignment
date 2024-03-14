@@ -7,7 +7,6 @@
         generateReport(doctorID, selectedMonth);
     });
     $("#exportPDFButton").click(exportToPDF);
-
 });
 
 function generateReport(doctorID, selectedMonth) {
@@ -41,13 +40,21 @@ function generateReport(doctorID, selectedMonth) {
                     row.append(`<td rowspan="${response.filter(item => item.AppointmentDate === appointment.AppointmentDate).length}">${appointmentDate}</td>`);
                     row.append('<td>' + appointmentTime + '</td>');
                     row.append('<td>' + appointment.PatientName + '</td>');
-                    row.append(`<td id="status_${appointment.AppointmentID}">${appointment.AppointmentStatus}</td>`);
+                    var appointmentStatus;
+                    if (appointment.AppointmentStatus === 1) appointmentStatus = "Open";
+                    else if (appointment.AppointmentStatus === 2) appointmentStatus = "Closed";
+                    else appointmentStatus = "Cancelled";
+                    row.append(`<td id="status_${appointment.AppointmentID}">${appointmentStatus}</td>`);
                     appointmentList.append(row);
                     previousDate = appointmentDate;
                 } else {
                     row.append('<td>' + appointmentTime + '</td>');
                     row.append('<td>' + appointment.PatientName + '</td>');
-                    row.append(`<td id="status_${appointment.AppointmentID}">${appointment.AppointmentStatus}</td>`);
+                    var appointmentStatus;
+                    if (appointment.AppointmentStatus === 1) appointmentStatus = "Open";
+                    else if (appointment.AppointmentStatus === 2) appointmentStatus = "Closed";
+                    else appointmentStatus = "Cancelled";
+                    row.append(`<td id="status_${appointment.AppointmentID}">${appointmentStatus}</td>`);
                     appointmentList.append(row);
                 }
             });
@@ -69,13 +76,33 @@ function formatTimeSpan(timeSpan) {
     return hours + ':' + minutes;
 }
 
+//function exportToPDF() {
+//    var doc = new jsPDF();
+//    var table = document.getElementById("appointmentDetailedReport");
+//    doc.autoTable({ html: table });
+//    doc.save("appointment_detailed_report.pdf");
+//}
+
 function exportToPDF() {
     var doc = new jsPDF();
     var table = document.getElementById("appointmentDetailedReport");
-    doc.autoTable({ html: table });
-    doc.save("appointment_detailed_report.pdf");
-}
 
+    // Add doctor name and date as heading
+    var doctorName = document.getElementById("doctorName").innerHTML;
+    var selectedMonth = document.getElementById("appointmentMonth").value;
+
+    var heading = "<div style='font-size: 18px; font-weight: bold;'>Appointment Detailed Report</div><br>" +
+        "<div>Doctor : " + doctorName + "</div>" +
+        "<div>Month  : " + selectedMonth + "</div><br>";
+    doc.fromHTML(heading, 15, 10);
+
+    // Add table to PDF
+    doc.autoTable({
+        html: table,
+        startY: 30
+    });
+    doc.save("appointment_Detailed_report.pdf");
+}
     
 
 

@@ -15,16 +15,28 @@ namespace DoctorAppointment.Utility
             try
             {
                 string filename = DateTime.Now.ToString("yyyy-MM-dd") + "_ErrorLog.txt";
-                string logPath = ConfigurationManager.AppSettings["logPath"] + filename;
+                string logDirectory = ConfigurationManager.AppSettings["logPath"];
+                string logPath = Path.Combine(logDirectory, filename);
+
+                if (!Directory.Exists(logDirectory))
+                {
+                    Directory.CreateDirectory(logDirectory);
+                }
+
                 using (StreamWriter writer = new StreamWriter(logPath, true))
                 {
                     writer.WriteLine($"{DateTime.Now} | {ex.Message}");
+                    if (ex.InnerException != null)
+                    {
+                        writer.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                    }
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+
         }
     }
 }

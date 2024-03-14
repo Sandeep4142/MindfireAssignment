@@ -2,8 +2,15 @@
     ViewBag.Title = "UpcomingAppointments";
     Layout = "~/Views/Shared/_DoctorLayout.cshtml";
 }
+
+@if (TempData["UpdateMessage"] != null)
+{
+    <script>
+        alert('@TempData["UpdateMessage"]');
+    </script>
+}
+
 <h2 class="text-center">Upcoming Appointments</h2>
-<input type="hidden" id="doctorID" value=@ViewBag.doctorID>
 
 <div class="mb-3">
     <label for="datepicker">Select date : </label>

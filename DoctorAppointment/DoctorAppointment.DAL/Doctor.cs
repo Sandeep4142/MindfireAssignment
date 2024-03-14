@@ -22,10 +22,10 @@ namespace DoctorAppointment.DAL
     
         public int DoctorID { get; set; }
         public string DoctorName { get; set; }
-        public Nullable<int> UserID { get; set; }
         public System.TimeSpan AppointmentSlotTime { get; set; }
         public System.TimeSpan DayStartTime { get; set; }
         public System.TimeSpan DayEndTime { get; set; }
+        public int UserID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Appointment> Appointments { get; set; }

@@ -31,9 +31,13 @@ function GetUpcomingAppointments(doctorID, selectedDate) {
 
                 row.append('<td>' + appointmentTime + '</td>');
                 row.append('<td>' + appointment.PatientName + '</td>');
-                row.append(`<td id="status_${appointment.AppointmentID}">${appointment.AppointmentStatus}</td>`);
+                var appointmentStatus;
+                if (appointment.AppointmentStatus === 1) appointmentStatus = "Open";
+                else if (appointment.AppointmentStatus === 2) appointmentStatus = "Closed";
+                else appointmentStatus = "Cancelled";
+                row.append(`<td id="status_${appointment.AppointmentID}">${appointmentStatus}</td>`);
 
-                if (appointment.AppointmentStatus != "Closed" && appointment.AppointmentStatus != "Cancelled") {
+                if (appointmentStatus != "Closed" && appointmentStatus != "Cancelled") {
                     row.append(`<td>
                     <button type="button" class="btn btn-success"
                     onclick="closeAppointment(${appointment.AppointmentID})">Close</button>

@@ -12,22 +12,22 @@
           <Property Name="AppointmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AppointmentDate" Type="date" Nullable="false" />
           <Property Name="AppointmentTime" Type="time" Precision="7" Nullable="false" />
-          <Property Name="DoctorID" Type="int" />
           <Property Name="PatientName" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="PatientEmail" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="PatientPhone" Type="int" Nullable="false" />
-          <Property Name="AppointmentStatus" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PatientPhone" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="AppointmentStatus" Type="smallint" Nullable="false" />
+          <Property Name="DoctorID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Doctor">
           <Key>
             <PropertyRef Name="DoctorID" />
           </Key>
           <Property Name="DoctorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="DoctorName" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="UserID" Type="int" />
+          <Property Name="DoctorName" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="AppointmentSlotTime" Type="time" Precision="7" Nullable="false" />
           <Property Name="DayStartTime" Type="time" Precision="7" Nullable="false" />
           <Property Name="DayEndTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -38,8 +38,8 @@
           <Property Name="Email" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="Password" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Appointme__Docto__5070F446">
-          <End Role="Doctor" Type="Self.Doctor" Multiplicity="0..1" />
+        <Association Name="FK_Appointment_Doctor">
+          <End Role="Doctor" Type="Self.Doctor" Multiplicity="1" />
           <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Doctor">
@@ -50,8 +50,8 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Doctor__UserID__4D94879B">
-          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+        <Association Name="FK_Doctor_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
           <End Role="Doctor" Type="Self.Doctor" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -66,11 +66,11 @@
           <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Doctor" EntityType="Self.Doctor" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Appointme__Docto__5070F446" Association="Self.FK__Appointme__Docto__5070F446">
+          <AssociationSet Name="FK_Appointment_Doctor" Association="Self.FK_Appointment_Doctor">
             <End Role="Doctor" EntitySet="Doctor" />
             <End Role="Appointment" EntitySet="Appointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__Doctor__UserID__4D94879B" Association="Self.FK__Doctor__UserID__4D94879B">
+          <AssociationSet Name="FK_Doctor_User" Association="Self.FK_Doctor_User">
             <End Role="User" EntitySet="User" />
             <End Role="Doctor" EntitySet="Doctor" />
           </AssociationSet>
@@ -83,11 +83,11 @@
           <EntitySet Name="Appointments" EntityType="DoctorAppointmentModel.Appointment" />
           <EntitySet Name="Doctors" EntityType="DoctorAppointmentModel.Doctor" />
           <EntitySet Name="Users" EntityType="DoctorAppointmentModel.User" />
-          <AssociationSet Name="FK__Appointme__Docto__5070F446" Association="DoctorAppointmentModel.FK__Appointme__Docto__5070F446">
+          <AssociationSet Name="FK_Appointment_Doctor" Association="DoctorAppointmentModel.FK_Appointment_Doctor">
             <End Role="Doctor" EntitySet="Doctors" />
             <End Role="Appointment" EntitySet="Appointments" />
           </AssociationSet>
-          <AssociationSet Name="FK__Doctor__UserID__4D94879B" Association="DoctorAppointmentModel.FK__Doctor__UserID__4D94879B">
+          <AssociationSet Name="FK_Doctor_User" Association="DoctorAppointmentModel.FK_Doctor_User">
             <End Role="User" EntitySet="Users" />
             <End Role="Doctor" EntitySet="Doctors" />
           </AssociationSet>
@@ -99,25 +99,25 @@
           <Property Name="AppointmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AppointmentDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="AppointmentTime" Type="Time" Nullable="false" Precision="7" />
-          <Property Name="DoctorID" Type="Int32" />
           <Property Name="PatientName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="PatientEmail" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="PatientPhone" Type="Int32" Nullable="false" />
-          <Property Name="AppointmentStatus" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Doctor" Relationship="DoctorAppointmentModel.FK__Appointme__Docto__5070F446" FromRole="Appointment" ToRole="Doctor" />
+          <Property Name="PatientPhone" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="AppointmentStatus" Type="Int16" Nullable="false" />
+          <Property Name="DoctorID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Doctor" Relationship="DoctorAppointmentModel.FK_Appointment_Doctor" FromRole="Appointment" ToRole="Doctor" />
         </EntityType>
         <EntityType Name="Doctor">
           <Key>
             <PropertyRef Name="DoctorID" />
           </Key>
           <Property Name="DoctorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="DoctorName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="UserID" Type="Int32" />
+          <Property Name="DoctorName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="AppointmentSlotTime" Type="Time" Nullable="false" Precision="7" />
           <Property Name="DayStartTime" Type="Time" Nullable="false" Precision="7" />
           <Property Name="DayEndTime" Type="Time" Nullable="false" Precision="7" />
-          <NavigationProperty Name="Appointments" Relationship="DoctorAppointmentModel.FK__Appointme__Docto__5070F446" FromRole="Doctor" ToRole="Appointment" />
-          <NavigationProperty Name="User" Relationship="DoctorAppointmentModel.FK__Doctor__UserID__4D94879B" FromRole="Doctor" ToRole="User" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Appointments" Relationship="DoctorAppointmentModel.FK_Appointment_Doctor" FromRole="Doctor" ToRole="Appointment" />
+          <NavigationProperty Name="User" Relationship="DoctorAppointmentModel.FK_Doctor_User" FromRole="Doctor" ToRole="User" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -127,10 +127,10 @@
           <Property Name="Name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Password" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Doctors" Relationship="DoctorAppointmentModel.FK__Doctor__UserID__4D94879B" FromRole="User" ToRole="Doctor" />
+          <NavigationProperty Name="Doctors" Relationship="DoctorAppointmentModel.FK_Doctor_User" FromRole="User" ToRole="Doctor" />
         </EntityType>
-        <Association Name="FK__Appointme__Docto__5070F446">
-          <End Type="DoctorAppointmentModel.Doctor" Role="Doctor" Multiplicity="0..1" />
+        <Association Name="FK_Appointment_Doctor">
+          <End Type="DoctorAppointmentModel.Doctor" Role="Doctor" Multiplicity="1" />
           <End Type="DoctorAppointmentModel.Appointment" Role="Appointment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Doctor">
@@ -141,8 +141,8 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Doctor__UserID__4D94879B">
-          <End Type="DoctorAppointmentModel.User" Role="User" Multiplicity="0..1" />
+        <Association Name="FK_Doctor_User">
+          <End Type="DoctorAppointmentModel.User" Role="User" Multiplicity="1" />
           <End Type="DoctorAppointmentModel.Doctor" Role="Doctor" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -162,11 +162,11 @@
           <EntitySetMapping Name="Appointments">
             <EntityTypeMapping TypeName="DoctorAppointmentModel.Appointment">
               <MappingFragment StoreEntitySet="Appointment">
+                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
                 <ScalarProperty Name="AppointmentStatus" ColumnName="AppointmentStatus" />
                 <ScalarProperty Name="PatientPhone" ColumnName="PatientPhone" />
                 <ScalarProperty Name="PatientEmail" ColumnName="PatientEmail" />
                 <ScalarProperty Name="PatientName" ColumnName="PatientName" />
-                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
                 <ScalarProperty Name="AppointmentTime" ColumnName="AppointmentTime" />
                 <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
                 <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
@@ -176,10 +176,10 @@
           <EntitySetMapping Name="Doctors">
             <EntityTypeMapping TypeName="DoctorAppointmentModel.Doctor">
               <MappingFragment StoreEntitySet="Doctor">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="DayEndTime" ColumnName="DayEndTime" />
                 <ScalarProperty Name="DayStartTime" ColumnName="DayStartTime" />
                 <ScalarProperty Name="AppointmentSlotTime" ColumnName="AppointmentSlotTime" />
-                <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
                 <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
               </MappingFragment>

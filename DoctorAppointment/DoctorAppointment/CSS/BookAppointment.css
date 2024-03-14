@@ -11,6 +11,21 @@
     cursor: pointer;
 }
 
+.existing-time-slot {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    pointer-events :none ;
+}
+
 .time-slot.selected {
     background-color: #007bff;
     color: #fff;

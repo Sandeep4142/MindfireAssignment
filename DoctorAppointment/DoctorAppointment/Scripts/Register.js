@@ -1,7 +1,6 @@
 ﻿$('#Email').on('blur', CheckEmailExist);
 function CheckEmailExist() {
     var email = $('#Email').val();
-    console.log(email);
     $.ajax({
         type: "POST",
         url: "/Home/CheckEmailExist",

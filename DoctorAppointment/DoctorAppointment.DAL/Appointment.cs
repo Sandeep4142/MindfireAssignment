@@ -17,12 +17,12 @@ namespace DoctorAppointment.DAL
         public int AppointmentID { get; set; }
         public System.DateTime AppointmentDate { get; set; }
         public System.TimeSpan AppointmentTime { get; set; }
-        public Nullable<int> DoctorID { get; set; }
         public string PatientName { get; set; }
         public string PatientEmail { get; set; }
-        public int PatientPhone { get; set; }
-        public string AppointmentStatus { get; set; }
-    
+        public string PatientPhone { get; set; }
+        public short AppointmentStatus { get; set; }
+        public int DoctorID { get; set; }
+
         public virtual Doctor Doctor { get; set; }
     }
 }

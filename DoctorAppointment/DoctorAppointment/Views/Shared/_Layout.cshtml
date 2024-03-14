@@ -17,12 +17,10 @@
                     {
                         <span class="ms-2 text-light">Are you Doctor ?</span>
                         @Html.ActionLink("Login/Register", "login", "Home", new { area = "" }, new { @class = "ms-3 btn btn-primary" })
-
                     }
                     else
                     {
                         @Html.ActionLink("LogOut", "LogOut", "Home", new { area = "" }, new { @class = "ms-3 btn btn-primary" })
-
                     }
                 }
             </div>
@@ -30,7 +28,6 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
     </div>
 
     @Scripts.Render("~/bundles/jquery")

@@ -46,12 +46,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionData.cs" />
     <Compile Include="SummaryReport.cs" />
+    <Compile Include="TimeSlotAvailability.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LogFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DoctorAppointment.Model\DoctorAppointment.Model.csproj">
+      <Project>{358d59af-4752-4dc7-8be1-1e5aad4175a6}</Project>
+      <Name>DoctorAppointment.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

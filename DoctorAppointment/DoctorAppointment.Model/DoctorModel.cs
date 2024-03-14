@@ -10,7 +10,7 @@ namespace DoctorAppointment.Model
     {
         public int DoctorID { get; set; }
         public string DoctorName { get; set; }
-        public Nullable<int> UserID { get; set; }
+        public int UserID { get; set; }
         public System.TimeSpan AppointmentSlotTime { get; set; }
         public System.TimeSpan DayStartTime { get; set; }
         public System.TimeSpan DayEndTime { get; set; }

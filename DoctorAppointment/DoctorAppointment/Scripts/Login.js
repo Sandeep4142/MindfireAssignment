@@ -28,7 +28,6 @@
                 }
             },
             error: function (xhr, status, error) {
-                console.error("An error occurred while checking user:", error);
                 alert('Something went wrong.');
             }
         });

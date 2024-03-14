@@ -4,11 +4,11 @@
     <EntitySetMapping Name="Appointments">
       <EntityTypeMapping TypeName="DoctorAppointmentModel.Appointment">
         <MappingFragment StoreEntitySet="Appointment">
+          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
           <ScalarProperty Name="AppointmentStatus" ColumnName="AppointmentStatus" />
           <ScalarProperty Name="PatientPhone" ColumnName="PatientPhone" />
           <ScalarProperty Name="PatientEmail" ColumnName="PatientEmail" />
           <ScalarProperty Name="PatientName" ColumnName="PatientName" />
-          <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
           <ScalarProperty Name="AppointmentTime" ColumnName="AppointmentTime" />
           <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
           <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
@@ -18,10 +18,10 @@
     <EntitySetMapping Name="Doctors">
       <EntityTypeMapping TypeName="DoctorAppointmentModel.Doctor">
         <MappingFragment StoreEntitySet="Doctor">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="DayEndTime" ColumnName="DayEndTime" />
           <ScalarProperty Name="DayStartTime" ColumnName="DayStartTime" />
           <ScalarProperty Name="AppointmentSlotTime" ColumnName="AppointmentSlotTime" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
           <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
         </MappingFragment>

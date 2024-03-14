@@ -150,6 +150,7 @@
     <Content Include="CSS\DoctorLayout.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\LoginRegister.css" />
+    <Content Include="CSS\UpdateDoctorDetails.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -176,6 +177,7 @@
     <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\Register.js" />
+    <Content Include="Scripts\RemoveAllAppointments.js" />
     <Content Include="Scripts\UpcomingAppointments.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -196,6 +198,7 @@
     <Content Include="Views\Shared\_DoctorLayout.cshtml" />
     <Content Include="Views\Doctor\AppointmentSummaryReport.cshtml" />
     <Content Include="Views\Doctor\UpcomingAppointments.cshtml" />
+    <Content Include="Views\Doctor\UpdateDoctorDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

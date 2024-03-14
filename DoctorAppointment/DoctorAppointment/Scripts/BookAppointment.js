@@ -11,6 +11,48 @@
 
     var selectedSlot = null;
 
+    //function fetchAvailableTimeSlots(selectedDate) {
+    //    var doctorId = $("#doctorID").val();
+    //    $.ajax({
+    //        url: '/Appointment/GetAvailableTimeSlots',
+    //        type: 'POST',
+    //        data: { selectedDate: selectedDate, doctorId: doctorId },
+    //        success: function (data) {
+    //            var availableSlots = data.availableTimeSlots;
+    //            var doctorSlot = data.doctorSlotTime;
+    //            var timeSlotsHtml = '';
+    //            for (var i = 0; i < availableSlots.length; i++) {
+    //                var startTime = new Date(); // Current date/time
+    //                startTime.setHours(availableSlots[i].Hours);
+    //                startTime.setMinutes(availableSlots[i].Minutes);
+
+    //                var endTime = new Date(startTime.getTime() + doctorSlot.TotalMilliseconds);
+
+    //                var startHours = startTime.getHours();
+    //                var startMinutes = startTime.getMinutes();
+    //                var endHours = endTime.getHours();
+    //                var endMinutes = endTime.getMinutes();
+
+    //                var startTimeString = (startHours < 10 ? '0' : '') + startHours + ':' + (startMinutes < 10 ? '0' : '') + startMinutes;
+    //                var endTimeString = (endHours < 10 ? '0' : '') + endHours + ':' + (endMinutes < 10 ? '0' : '') + endMinutes;
+    //                var timeSlotString = startTimeString + '-' + endTimeString;
+    //                timeSlotsHtml += '<div class="time-slot" data-start="' + startTimeString + '" data-end="' + endTimeString + '">' + timeSlotString + '</div>';
+    //            }
+
+    //            $('#availableSlots').html(timeSlotsHtml);
+
+    //            $('.time-slot').click(function () {
+    //                var $this = $(this);
+    //                if (selectedSlot) {
+    //                    selectedSlot.removeClass('selected');
+    //                }
+    //                $this.addClass('selected');
+    //                selectedSlot = $this;
+    //            });
+    //        }
+    //    });
+    //}
+
     function fetchAvailableTimeSlots(selectedDate) {
         var doctorId = $("#doctorID").val();
         $.ajax({
@@ -20,7 +62,9 @@
             success: function (data) {
                 var availableSlots = data.availableTimeSlots;
                 var doctorSlot = data.doctorSlotTime;
+                var existingAppointments = data.existingAppointments;
                 var timeSlotsHtml = '';
+
                 for (var i = 0; i < availableSlots.length; i++) {
                     var startTime = new Date(); // Current date/time
                     startTime.setHours(availableSlots[i].Hours);
@@ -36,7 +80,12 @@
                     var startTimeString = (startHours < 10 ? '0' : '') + startHours + ':' + (startMinutes < 10 ? '0' : '') + startMinutes;
                     var endTimeString = (endHours < 10 ? '0' : '') + endHours + ':' + (endMinutes < 10 ? '0' : '') + endMinutes;
                     var timeSlotString = startTimeString + '-' + endTimeString;
-                    timeSlotsHtml += '<div class="time-slot" data-start="' + startTimeString + '" data-end="' + endTimeString + '">' + timeSlotString + '</div>';
+
+                    var isExisting = isTimeSlotExisting(availableSlots[i], existingAppointments, doctorSlot);
+
+                    var slotClass = isExisting ? 'existing-time-slot' : 'time-slot';
+
+                    timeSlotsHtml += '<div class="' + slotClass + '" data-start="' + startTimeString + '" data-end="' + endTimeString + '">' + timeSlotString + '</div>';
                 }
 
                 $('#availableSlots').html(timeSlotsHtml);
@@ -46,12 +95,25 @@
                     if (selectedSlot) {
                         selectedSlot.removeClass('selected');
                     }
-                    $this.addClass('selected');
-                    selectedSlot = $this;
+                    if (!$this.hasClass('existing-time-slot')) {
+                        $this.addClass('selected');
+                        selectedSlot = $this;
+                    }
                 });
             }
         });
     }
+
+    function isTimeSlotExisting(availableSlots, existingAppointments) {
+        for (var i = 0; i < existingAppointments.length; i++) {
+            if (availableSlots.Hours == existingAppointments[i].Hours && availableSlots.Minutes == existingAppointments[i].Minutes) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
     $('form').submit(function (event) {
         event.preventDefault();
@@ -96,7 +158,4 @@
             }
         });
     });
-
-
-
 });

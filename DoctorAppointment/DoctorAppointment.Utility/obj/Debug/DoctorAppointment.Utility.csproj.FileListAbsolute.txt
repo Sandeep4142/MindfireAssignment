@@ -5,3 +5,6 @@ D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\obj\Debug\D
 D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\obj\Debug\DoctorAppointment.Utility.dll
 D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\obj\Debug\DoctorAppointment.Utility.pdb
 D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\bin\Debug\DoctorAppointment.Utility.dll.config
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\bin\Debug\DoctorAppointment.Model.dll
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\bin\Debug\DoctorAppointment.Model.pdb
+D:\Mindfire\DEMO PROJECT\DoctorAppointment\DoctorAppointment.Utility\obj\Debug\DoctorAppointment.Utility.csproj.CopyComplete

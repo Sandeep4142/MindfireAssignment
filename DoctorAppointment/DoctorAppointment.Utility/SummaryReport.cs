@@ -8,9 +8,9 @@ namespace DoctorAppointment.Utility
 {
     public class SummaryReport
     {
-        public System.DateTime date { get; set; }
-        public int totalAppointments { get ; set; }
-        public int totalClosedAppointments { get; set; }
-        public int totalCancelledAppointments { get; set; }
+        public System.DateTime Date { get; set; }
+        public int TotalAppointments { get ; set; }
+        public int TotalClosedAppointments { get; set; }
+        public int TotalCancelledAppointments { get; set; }
     }
 }

@@ -86,5 +86,41 @@ namespace DoctorAppointment.Controllers
             var response = DoctorAppointmentService.CancelAppointment(appointmentID);
             return Json(response, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult UpdateDoctorDetails(int doctorID)
+        {
+            var UserModel = DoctorAppointmentService.GetUserDetails(doctorID);
+            return View(UserModel);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateDoctorDetails(UserModel user)
+        {
+            bool isUpdated = DoctorAppointmentService.UpdateDoctor(user);
+            if (isUpdated)
+            {
+                TempData["UpdateMessage"] = "Update successful!";
+                DoctorModel doctor = DoctorAppointmentService.GetDoctorDetails(user.UserID);
+                SessionData sessionData = new SessionData()
+                {
+                    DoctorID = doctor.DoctorID,
+                    DoctorName = doctor.DoctorName
+                };
+                Session["Doctor"] = sessionData;
+                return RedirectToAction("UpcomingAppointments", "Doctor", new { doctorID = user.Doctor.DoctorID });
+            }
+            else
+            {
+                TempData["UpdateMessage"] = "Update failed!";
+                return RedirectToAction("UpdateDoctorDetails", "Doctor", new { doctorID = user.Doctor.DoctorID });
+            }
+        }
+
+        public ActionResult RemoveAllAppointments(int doctorID)
+        {
+            bool response = DoctorAppointmentService.RemoveAllAppointments(doctorID);
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

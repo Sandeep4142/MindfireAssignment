@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Model", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.Utility", "DoctorAppointment.Utility\DoctorAppointment.Utility.csproj", "{D1F96F63-0B79-4C47-B427-58C39BFA73F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointment.UnitTest", "DoctorAppointment.UnitTest\DoctorAppointment.UnitTest.csproj", "{8C252629-95E7-46B3-B3DA-71D67CDABF69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D1F96F63-0B79-4C47-B427-58C39BFA73F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1F96F63-0B79-4C47-B427-58C39BFA73F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1F96F63-0B79-4C47-B427-58C39BFA73F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C252629-95E7-46B3-B3DA-71D67CDABF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C252629-95E7-46B3-B3DA-71D67CDABF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C252629-95E7-46B3-B3DA-71D67CDABF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C252629-95E7-46B3-B3DA-71D67CDABF69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

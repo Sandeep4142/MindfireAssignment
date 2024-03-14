@@ -6,36 +6,19 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace DoctorAppointment.DAL
 {
     public static class UserDA
     {
-        public static bool RegisterDoctor(UserModel user)
+        public static bool RegisterDoctor(User user)
         {
             try
             {
                 using (var context = new DoctorAppointmentEntities())
                 {
-                    var newUser = new User
-                    {
-                        Name = user.Name,
-                        Email = user.Email,
-                        Password = user.Password,
-                    };
-
-                    newUser.Doctors = new List<Doctor>();
-
-                    var newDoctor = new Doctor()
-                    {
-                        DoctorName = user.Name, // for user name is same as doctor name
-                        AppointmentSlotTime = user.Doctor.AppointmentSlotTime,
-                        DayStartTime = user.Doctor.DayStartTime,
-                        DayEndTime = user.Doctor.DayEndTime
-                    };
-                    newUser.Doctors.Add(newDoctor);
-
-                    context.Users.Add(newUser);
+                    context.Users.Add(user);
                     context.SaveChanges();
                 }
                 return true;
@@ -44,6 +27,68 @@ namespace DoctorAppointment.DAL
             {
                 Logger.WriteLog(ex);
                 return false;
+            }
+        }
+
+        public static bool UpdateDoctor(UserModel user)
+        {
+            try
+            {
+                using (var context = new DoctorAppointmentEntities())
+                {
+                    var existingUser = context.Users.FirstOrDefault(u => u.UserID == user.UserID);
+
+                    if (existingUser != null)
+                    {
+                        existingUser.Name = user.Name.Trim();
+                        existingUser.Email = user.Email.Trim();
+                        existingUser.Password = user.Password.Trim();
+
+                        if (user.Doctor != null)
+                        {
+                            if (existingUser.Doctors.Count > 0)
+                            {
+                                // user has only one doctor associated
+                                var existingDoctor = existingUser.Doctors.First();
+                                existingDoctor.DoctorName = user.Name.Trim();
+                                existingDoctor.AppointmentSlotTime = user.Doctor.AppointmentSlotTime;
+                                existingDoctor.DayStartTime = user.Doctor.DayStartTime;
+                                existingDoctor.DayEndTime = user.Doctor.DayEndTime;
+                            }
+                        }
+
+                        context.SaveChanges();
+                        return true;
+                    }
+                    else
+                    {
+                        // User not found
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return false;
+            }
+        }
+
+        public static User GetUserDetails(int doctorID)
+        {
+            try
+            {
+                using (var context = new DoctorAppointmentEntities())
+                {
+                    Doctor doc = context.Doctors.Find(doctorID);
+                    User user = context.Users.Include(u => u.Doctors).FirstOrDefault(u => u.UserID == doc.UserID);
+                    return user;
+                }                
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
             }
         }
 

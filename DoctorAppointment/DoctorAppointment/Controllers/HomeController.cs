@@ -46,7 +46,7 @@ namespace DoctorAppointment.Controllers
 
         public ActionResult CheckEmailExist(string email)
         {
-            var response = DoctorAppointmentService.CheckEmailExist(email);
+            bool response = DoctorAppointmentService.CheckEmailExist(email);
             return Json(response, JsonRequestBehavior.AllowGet);
         }
     }

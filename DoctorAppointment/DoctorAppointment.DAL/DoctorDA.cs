@@ -10,29 +10,15 @@ namespace DoctorAppointment.DAL
 {
     public class DoctorDA
     {
-        public static List<DoctorModel> GetAllDoctors()
+        public static List<Doctor> GetAllDoctors()
         {
-            List<DoctorModel> doctorList = new List<DoctorModel>();
             try
             {
                 using (var context = new DoctorAppointmentEntities())
                 {
                     var doctors = context.Doctors.ToList();
-                    foreach (var doctor in doctors)
-                    {
-                        DoctorModel doc = new DoctorModel
-                        {
-                            DoctorID = doctor.DoctorID,
-                            DoctorName = doctor.DoctorName,
-                            UserID = doctor.UserID,
-                            AppointmentSlotTime = doctor.AppointmentSlotTime,
-                            DayStartTime = doctor.DayStartTime,
-                            DayEndTime = doctor.DayEndTime,
-                        };
-                        doctorList.Add(doc);
-                    }
+                    return doctors;
                 }
-                return doctorList;
             }
             catch (Exception ex)
             {
@@ -41,28 +27,15 @@ namespace DoctorAppointment.DAL
             }
         }
 
-        public static DoctorModel GetDoctorDetails(int doctorID)
+        public static Doctor GetDoctorDetails(int doctorID)
         {
-            DoctorModel doctor = null;
             try
             {
                 using (var context = new DoctorAppointmentEntities())
                 {
-                    Doctor doc = context.Doctors.Find(doctorID);
-                    if (doc != null)
-                    {
-                        doctor = new DoctorModel()
-                        {
-                            DoctorID = doctorID,
-                            DoctorName = doc.DoctorName,
-                            UserID = doc.UserID,
-                            AppointmentSlotTime = doc.AppointmentSlotTime,
-                            DayStartTime = doc.DayStartTime,
-                            DayEndTime = doc.DayEndTime
-                        };
-                    }
+                    Doctor doctor = context.Doctors.Find(doctorID);
+                    return doctor;
                 }
-                return doctor;
             }
             catch (Exception ex)
             {
