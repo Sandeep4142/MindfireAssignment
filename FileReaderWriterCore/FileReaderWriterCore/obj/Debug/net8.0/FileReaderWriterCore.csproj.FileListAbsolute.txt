@@ -1,0 +1,14 @@
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\bin\Debug\net8.0\FileReaderWriterCore.exe
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\bin\Debug\net8.0\FileReaderWriterCore.deps.json
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\bin\Debug\net8.0\FileReaderWriterCore.runtimeconfig.json
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\bin\Debug\net8.0\FileReaderWriterCore.dll
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\bin\Debug\net8.0\FileReaderWriterCore.pdb
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.AssemblyInfoInputs.cache
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.AssemblyInfo.cs
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.csproj.CoreCompileInputs.cache
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.dll
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\refint\FileReaderWriterCore.dll
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.pdb
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\FileReaderWriterCore.genruntimeconfig.cache
+D:\Mindfire\FileReaderWriterCore\FileReaderWriterCore\obj\Debug\net8.0\ref\FileReaderWriterCore.dll
