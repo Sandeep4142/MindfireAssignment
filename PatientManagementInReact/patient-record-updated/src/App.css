@@ -1,0 +1,29 @@
+.errorMessage {
+  color: red;
+  font-size: small;
+  margin-left:5px;
+}
+
+body{
+  margin : 0px;
+}
+
+.tableHead{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.patientHeader, .appointmentHeader{
+  position: sticky;
+  background-color:white;
+  top:60px;
+  z-index: 20;
+}
+
+.colorPurple{
+  background-color:  #311b92 !important;
+}
+
+.components{
+  padding-top: 40px;
+}

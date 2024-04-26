@@ -1,0 +1,167 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Sandeep Horo",
+      "email": "sandeep@gmail.com",
+      "password": "sandeep"
+    },
+    {
+      "id": "2",
+      "name": "Shashi Shekhar",
+      "email": "shashi@gmail.com",
+      "password": "shashi"
+    },
+    {
+      "id": "43ee",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "5037",
+      "name": "Raj Das",
+      "email": "raj@gmail.com",
+      "password": "raj"
+    },
+    {
+      "id": "7e1c",
+      "name": "Nilesh Das",
+      "email": "nilesh@gmail.com",
+      "password": "nilesh"
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "name": "Mohit Sahu",
+      "dateOfBirth": "2024-01-01",
+      "email": "mohit@gmail.com",
+      "phoneNo": "999999911",
+      "medicalHistory": "allergic to rose flower",
+      "appointmentId": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Arunangshu Das",
+      "dateOfBirth": "2024-01-01",
+      "email": "arun@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA",
+      "appointmentId": [
+        "3"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Shashi Shekhar",
+      "dateOfBirth": "2024-04-04",
+      "email": "shashi@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "4",
+      "name": "Nilesh Verma",
+      "dateOfBirth": "2024-04-19",
+      "email": "nilesh@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "5",
+      "name": "Anurag Kumar",
+      "dateOfBirth": "2024-04-17",
+      "email": "anurag@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "6",
+      "name": "Neel Verma",
+      "dateOfBirth": "2024-04-17",
+      "email": "neel@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "7",
+      "name": "Rohit Kumar",
+      "dateOfBirth": "2024-04-17",
+      "email": "rohit@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "8",
+      "name": "Abhishek Sahoo",
+      "dateOfBirth": "2024-04-17",
+      "email": "abhishek@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "9",
+      "name": "Sumit Das",
+      "dateOfBirth": "2024-04-17",
+      "email": "sumit@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "10",
+      "name": "Manmohan Dhal",
+      "dateOfBirth": "2024-04-17",
+      "email": "manmohan@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "11",
+      "name": "Pratyush Sahu",
+      "dateOfBirth": "2024-04-17",
+      "email": "pratyush@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "12",
+      "name": "Lal Rohit",
+      "dateOfBirth": "2024-04-17",
+      "email": "rohit@gmail.com",
+      "phoneNo": "1111111112",
+      "medicalHistory": "NA"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "patientId": "1",
+      "patientName": "Mohit Sahu",
+      "date": "2024-02-08",
+      "time": "17:40",
+      "reason": "blood check",
+      "instruction": "NA"
+    },
+    {
+      "id": "2",
+      "patientName": "Arunangshu Das",
+      "date": "2024-04-20",
+      "time": "17:40",
+      "reason": "NA",
+      "instruction": "NA"
+    },
+    {
+      "id": "3",
+      "patientName": "Shashi Shekhar",
+      "date": "2024-04-26",
+      "time": "21:53",
+      "reason": "Blood Test",
+      "instruction": "None",
+      "patientId": 3
+    }
+  ]
+}

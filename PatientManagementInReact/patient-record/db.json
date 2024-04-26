@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Sandeep Horo",
+      "email": "sandeep@gmail.com",
+      "password": "sandeep"
+    },
+    {
+      "id": "2",
+      "name": "Shashi Shekhar",
+      "email": "shashi@gmail.com",
+      "password": "shashi"
+    },
+    {
+      "id": "43ee",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "5037",
+      "name": "Raj Das",
+      "email": "raj@gmail.com",
+      "password": "raj"
+    },
+    {
+      "id": "7e1c",
+      "name": "Nilesh Das",
+      "email": "nilesh@gmail.com",
+      "password": "nilesh"
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "name": "Mohit Sahu",
+      "dateOfBirth": "2024-01-01",
+      "email": "mohit@gmail.com",
+      "phoneNo": "999999911",
+      "medicalHistory": "allergic to rose flower",
+      "appointmentId": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Arunangshu Das",
+      "dateOfBirth": "2024-01-01",
+      "email": "arun@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA",
+      "appointmentId": [
+        "3"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Shashi Shekhar",
+      "dateOfBirth": "2024-04-04",
+      "email": "shashi@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "None"
+    },
+    {
+      "id": "4",
+      "name": "Anish",
+      "dateOfBirth": "2024-04-20",
+      "email": "anish@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "5",
+      "name": "Nilesh Verma",
+      "dateOfBirth": "2024-04-17",
+      "email": "nilesh@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "patientName": "Arunangshu Das",
+      "date": "2024-04-20",
+      "time": "17:40",
+      "reason": "Blood Test",
+      "instruction": "NA"
+    },
+    {
+      "id": "2",
+      "patientName": "Shashi Shekhar",
+      "date": "2024-04-26",
+      "time": "21:53",
+      "reason": "Blood Test",
+      "instruction": "None",
+      "patientId": 3
+    },
+    {
+      "id": "3",
+      "patientId": "2",
+      "patientName": "Arunangshu Das",
+      "date": "2024-04-27",
+      "time": "12:00",
+      "reason": "NA",
+      "instruction": "NA"
+    },
+    {
+      "id": "4",
+      "patientName": "Nilesh Verma",
+      "date": "2024-04-19",
+      "time": "22:02",
+      "reason": "Blood Test",
+      "instruction": "NA",
+      "patientId": null
+    }
+  ]
+}

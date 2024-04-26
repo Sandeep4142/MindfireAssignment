@@ -1,0 +1,332 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Sandeep Horo",
+      "email": "sandeep@gmail.com",
+      "password": "sandeep"
+    },
+    {
+      "id": "2",
+      "name": "Shashi Shekhar",
+      "email": "shashi@gmail.com",
+      "password": "shashi"
+    },
+    {
+      "id": "43ee",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "5037",
+      "name": "Raj Das",
+      "email": "raj@gmail.com",
+      "password": "raj"
+    },
+    {
+      "id": "7e1c",
+      "name": "Nilesh Das",
+      "email": "nilesh@gmail.com",
+      "password": "nilesh"
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "name": "Mohit Sahu",
+      "dateOfBirth": "2024-01-01",
+      "email": "mohit@gmail.com",
+      "phoneNo": "999999914",
+      "medicalHistory": "NA",
+      "appointmentId": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Shashi Shekhar",
+      "dateOfBirth": "2024-04-04",
+      "email": "shashi@gmail.com",
+      "phoneNo": "1111111114",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "4",
+      "name": "Nilesh Verma",
+      "dateOfBirth": "2024-04-19",
+      "email": "nilesh@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "6",
+      "name": "Neel Verma",
+      "dateOfBirth": "2024-04-17",
+      "email": "neel@gmail.com",
+      "phoneNo": "1111111112",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "7",
+      "name": "Rohit Kumar",
+      "dateOfBirth": "2024-04-17",
+      "email": "rohit@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "8",
+      "name": "Abhishek Sahoo",
+      "dateOfBirth": "2024-04-17",
+      "email": "abhishek@gmail.com",
+      "phoneNo": "1111111113",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "10",
+      "name": "Manmohan Dhal",
+      "dateOfBirth": "2024-04-17",
+      "email": "manmohan@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "11",
+      "name": "Lal Rohit",
+      "dateOfBirth": "2024-04-17",
+      "email": "rohit@gmail.com",
+      "phoneNo": "1111111114",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "12",
+      "name": "Raju",
+      "dateOfBirth": "2024-04-10",
+      "email": "raju@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "13",
+      "name": "Manish",
+      "dateOfBirth": "2024-04-10",
+      "email": "manish@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "16",
+      "name": "Danish",
+      "dateOfBirth": "2024-04-10",
+      "email": "danish@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "17",
+      "name": "Asif",
+      "dateOfBirth": "2024-04-10",
+      "email": "asif@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "19",
+      "name": "Rahul",
+      "dateOfBirth": "2024-04-10",
+      "email": "rahul@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "20",
+      "name": "Gourav",
+      "dateOfBirth": "2024-04-10",
+      "email": "gourav@gmail.com",
+      "phoneNo": "1111111112",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "21",
+      "name": "Nikhil",
+      "dateOfBirth": "2024-04-10",
+      "email": "nikhil@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "22",
+      "name": "Suresh",
+      "dateOfBirth": "2024-04-10",
+      "email": "suresh@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "26",
+      "name": "Sunil",
+      "dateOfBirth": "2024-04-10",
+      "email": "sunil@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "27",
+      "name": "Rajesh",
+      "dateOfBirth": "2024-04-10",
+      "email": "rajesh@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "28",
+      "name": "Deepak",
+      "dateOfBirth": "2024-04-10",
+      "email": "deepak@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "29",
+      "name": "Sanjay",
+      "dateOfBirth": "2024-04-10",
+      "email": "sanjay@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "31",
+      "name": "Vishal",
+      "dateOfBirth": "2024-04-10",
+      "email": "vishal@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "33",
+      "name": "Rakesh",
+      "dateOfBirth": "2024-04-10",
+      "email": "rakesh@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "34",
+      "name": "Raman",
+      "dateOfBirth": "2024-04-10",
+      "email": "raman@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "36",
+      "name": "Sumit",
+      "dateOfBirth": "2024-04-10",
+      "email": "sumit@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "37",
+      "name": "Avinash",
+      "dateOfBirth": "2024-04-10",
+      "email": "avinash@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "39",
+      "name": "Pankaj",
+      "dateOfBirth": "2024-04-10",
+      "email": "pankaj@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "40",
+      "name": "Pradeep",
+      "dateOfBirth": "2024-04-10",
+      "email": "pradeep@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "41",
+      "name": "Sandeep",
+      "dateOfBirth": "2024-04-10",
+      "email": "sandeep@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "45",
+      "name": "Prakash",
+      "dateOfBirth": "2024-04-10",
+      "email": "prakash@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "46",
+      "name": "Rajiv",
+      "dateOfBirth": "2024-04-10",
+      "email": "rajiv@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "47",
+      "name": "Ankur",
+      "dateOfBirth": "2024-04-10",
+      "email": "ankur@gmail.com",
+      "phoneNo": "1111111112",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "49",
+      "name": "Vivek",
+      "dateOfBirth": "2024-04-10",
+      "email": "vivek@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    },
+    {
+      "id": "50",
+      "name": "Kumar",
+      "dateOfBirth": "2024-04-10",
+      "email": "kumar@gmail.com",
+      "phoneNo": "1111111111",
+      "medicalHistory": "NA"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "patientId": "1",
+      "patientName": "Mohit Sahu",
+      "date": "2024-02-09",
+      "time": "17:40",
+      "reason": "Blood Check",
+      "instruction": "NA"
+    },
+    {
+      "id": "2",
+      "patientName": "Arunangshu Das",
+      "date": "2024-04-20",
+      "time": "17:40",
+      "reason": "NA",
+      "instruction": "NA"
+    },
+    {
+      "id": "4",
+      "patientName": "Nilesh Verma",
+      "date": "2024-04-27",
+      "time": "16:00",
+      "reason": "NA",
+      "instruction": "NA",
+      "patientId": "4"
+    }
+  ]
+}
